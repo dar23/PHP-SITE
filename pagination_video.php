@@ -26,7 +26,7 @@ $number_of_result=mysqli_num_rows($result);  // wszystkie rekordy
 
 $number_site=ceil($number_of_result/$limit_on_page); // ile stron jest obecnie 
 
-sd
+
 
 
 ?>
