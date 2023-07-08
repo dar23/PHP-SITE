@@ -78,15 +78,23 @@
                
 
                   <?php    
-
+ 
           require("pagination_video.php");
         
 
-
+         
                             
                 $videos = "SELECT DISTINCT * FROM  entries_videos ORDER BY id DESC LIMIT $skip_page, $limit_on_page ";
                
                 $result=$conn->query($videos);
+
+
+         
+
+
+
+
+
                 
                     while($row = mysqli_fetch_array($result)){
                                           
@@ -106,7 +114,7 @@
                 <?php      
               for($page = 1; $page<= $number_site; $page++) {  
                             
-                echo '<a href = "index.php?page=' . $page . '" style="font-size:20px; display:inline; letter-spacing:5px;">' . $page . ' </a>';  
+                echo '<a href = "index.php?page=' . $page . '" style="font-size:20px; display:inline; letter-spacing:8px;">' . $page . ' </a>';  
                     
               }  
              

@@ -20,7 +20,7 @@ function search_open(){
 
                 input_search.style.color="white";
               
-                input_search.style.width="500px";
+                input_search.style.width="300px";
                 
                loopa.style.visibility="hidden";
              
@@ -36,7 +36,7 @@ function search_close(){
     let input_search=document.querySelector('.input_search');
     let loopa=document.querySelector('.loop');
 
-    if(input_search.style.width="500px"){
+    if(input_search.style.width="300px"){
 
         input_search.style.color= "rgb(109,109,109)";
         input_search.style.width="300px";
@@ -47,8 +47,9 @@ function search_close(){
     }
 
  
-    if(input_search.style.width="100px"){
+    if(input_search.style.width="300px"){
         loopa.style.visibility="visible";
+        loopa.style.color="silver";
         }
 
 
