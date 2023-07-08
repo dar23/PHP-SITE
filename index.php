@@ -80,7 +80,7 @@
                   <?php    
 
           require("pagination_video.php");
-
+        
 
 
                             
@@ -101,13 +101,19 @@
                   ?>
                                           
                 </div>                       
-           <?php        
-                for($page = 1; $page<= $number_site; $page++) {  
-        echo '<a href = "index.php?page=' . $page . '">' . $page . ' </a>';  
-    }  
-             ?>   
-</div>  
+       
+     <div class="ahref_counter">           
+                <?php      
+              for($page = 1; $page<= $number_site; $page++) {  
+                            
+                echo '<a href = "index.php?page=' . $page . '" style="font-size:20px; display:inline; letter-spacing:5px;">' . $page . ' </a>';  
+                    
+              }  
+             
+             ?>             
+       </div>       
 
+</div>  
 
 
 
