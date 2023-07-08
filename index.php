@@ -72,11 +72,19 @@
                 </div>
 
                       
-                <div class="records_video">
+    <div class="records_video">
+
+
+               
 
                   <?php    
+
+          require("pagination_video.php");
+
+
+
                             
-                $videos = "SELECT DISTINCT * FROM  entries_videos ORDER BY id DESC ";
+                $videos = "SELECT DISTINCT * FROM  entries_videos ORDER BY id DESC LIMIT $skip_page, $limit_on_page ";
                
                 $result=$conn->query($videos);
                 
@@ -93,11 +101,14 @@
                   ?>
                                           
                 </div>                       
-                                                  
-                
+           <?php        
+                for($page = 1; $page<= $number_site; $page++) {  
+        echo '<a href = "index.php?page=' . $page . '">' . $page . ' </a>';  
+    }  
+             ?>   
 </div>  
 
-<?php require("pagination_video.php"); ?>
+
 
 
 
@@ -160,7 +171,7 @@
 
 </div>           
         
-<?php require("pagination_video.php"); ?>
+
 
 
 

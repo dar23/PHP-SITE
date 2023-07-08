@@ -1,6 +1,6 @@
 <?php    
 
-$limit_on_page=10;  // ile rekordów ma być na stronie;
+$limit_on_page=6 ;  // ile rekordów ma być na stronie;
 
         if(isset($_GET['page'])){   
 
@@ -21,31 +21,10 @@ $skip_page=($current_page-1)*$limit_on_page; // liczba pominiętych stron na kt�
 
 //$limit_ten="SELECT DISTINCT * FROM  entries_videos ORDER BY id DESC LIMIT 10 ";
 
-$query="SELECT *FROM entries_videos";
-$result=mysqli_query($conn,$query);
-$number_of_result=mysqli_num_rows($result);
 
+$number_of_result=mysqli_num_rows($result);  // wszystkie rekordy
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$number_site=ceil($number_of_result/$limit_on_page); // ile stron jest obecnie 
 
 
 
