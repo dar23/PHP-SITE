@@ -1,0 +1,81 @@
+.panel {
+    background: rgb(221, 220, 220);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+    flex-grow: 4;
+    width: 450px;
+    min-height: 600px;
+    border: 1px solid rgb(180, 179, 179);
+    border-radius: 4px;
+    background: white;
+}
+
+.main {
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgb(57, 115, 185);
+    padding: 14px 30px;
+    text-align: left;
+    margin: 0 auto 22px;
+    font-family: Arial;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    color: white;
+}
+
+input[type="text"] {
+    position: relative;
+    margin: 0 auto 20px;
+    width: 90%;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    font-size: 11px;
+}
+
+input[type="file"] {
+    position: relative;
+    margin: 0 auto 22px;
+    padding: 10px 0;
+    width: 90%;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    position: relative;
+    margin: 0 auto 22px;
+    padding: 4px 0;
+    width: 20%;
+    height: 30px;
+    box-sizing: border-box;
+    background: rgb(183, 183, 183);
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 1px;
+    background: rgb(2, 78, 171);
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    height: 120px;
+    position: relative;
+    margin: 0 auto 5px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-size: 12px;
+    resize: none;
+}

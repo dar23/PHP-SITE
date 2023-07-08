@@ -1,0 +1,45 @@
+@keyframes lefting_three {
+
+    from{transform: translateX(0%);}
+    to{transform: translateX(10%);}
+    
+  }
+  
+  @keyframes lefting1_three {
+  
+    from{transform: translateX(10%);}
+    to{transform: translateX(0%);}
+    
+  }
+  
+  
+  
+  
+  
+  
+  @keyframes lefting {
+  
+    from{transform: translateX(0%);}
+    to{transform: translateX(10%);}
+    
+  }
+  
+  @keyframes lefting1 {
+  
+    from{transform: translateX(10%);}
+    to{transform: translateX(0%);}
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

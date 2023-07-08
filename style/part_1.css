@@ -1,0 +1,11 @@
+.part_1 {
+  
+  display: grid;
+  grid-template-rows: auto auto; /* Ustawiamy dwie równe wysokości dla wierszy */
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 200vh;
+  
+}
