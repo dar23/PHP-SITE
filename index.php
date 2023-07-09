@@ -110,16 +110,33 @@
                                           
                 </div>                       
        
-     <div class="ahref_counter">           
-                <?php      
-              for($page = 1; $page<= $number_site; $page++) {  
+
+
+
+     <ul class="ahref_counter">           
+             
+             
+      <?php      
+           
+           for($page = 1; $page<= $number_site; $page++) {  
                             
-                echo '<a href = "index.php?page=' . $page . '" style="font-size:20px; display:inline; letter-spacing:8px;">' . $page . ' </a>';  
+                echo '<a href = "index.php?page=' . $page . '" >' . $page . ' </a>';  
                     
               }  
              
-             ?>             
-       </div>       
+      ?>    
+      
+      
+            </ul>       
+
+
+
+
+
+
+
+
+
 
 </div>  
 
