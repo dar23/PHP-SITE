@@ -56,7 +56,7 @@
                     
                         $result=$conn->query($videos1);
 
-                          echo '<video controls autoplay >';
+                          echo '<video controls  >';
                                               
                                   while ($row = mysqli_fetch_array($result)){
                                     
