@@ -63,32 +63,33 @@ video {
   font-size: 12px;
 }
 
-
-.ahref_counter{
-
-  display:flex;
+.ahref_counter {
   display: flex;
-  justify-content: center; /* Wyśrodkowanie w poziomie */
-  align-items: center; 
-  list-style-type: none; /* Usunięcie domyślnego znacznika punktowego */
- 
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.ahref_counter>a{
+.ahref_counter li {
+  margin: 0;
+  padding: 0;
+}
 
-
+.ahref_counter li a {
+  text-decoration: none;
   font-size:30px;
-  letter-spacing: 15px;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: 400;
-
+text-align: center;
+  margin-right: 10px;
+  color: black; /* Dodatkowy styl - możesz zmienić na dowolny kolor tekstu */
+ letter-spacing: 10px;
 }
 
-
-a:hover{
+li a:hover{
 
 color:rgb(22, 126, 181);
-
+background: white;
 
 
 }

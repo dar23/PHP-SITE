@@ -90,11 +90,6 @@
 
 
          
-
-
-
-
-
                 
                     while($row = mysqli_fetch_array($result)){
                                           
@@ -113,6 +108,12 @@
 
 
 
+
+
+                
+
+
+
      <ul class="ahref_counter">           
              
              
@@ -120,7 +121,7 @@
            
            for($page = 1; $page<= $number_site; $page++) {  
                             
-                echo '<a href = "index.php?page=' . $page . '" >' . $page . ' </a>';  
+                echo '<li>'.'<a href = "index.php?page=' . $page . '" >' . $page . ' </a>'.'</li>';  
                     
               }  
              
