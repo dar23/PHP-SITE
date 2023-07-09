@@ -65,17 +65,14 @@
                                       }
 
                                 '</video>';
-                            
-                                  
+                                            
                       ?>
 
                 </div>
 
                       
     <div class="records_video">
-
-
-               
+        
 
                   <?php    
  
