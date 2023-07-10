@@ -5,7 +5,7 @@ let entries_post=document.querySelector(".entries_post");
 //window.scroll - wartość o którą skrollowaliśmy stronę
 // window.innerHeight - wysokość okna przeglądarki 
 let input_search=document.querySelector('.input_search ');
-let loopa=document.querySelector('.fa');
+let loop=document.querySelector('.fa');
 
 
 function current_scroll(){
@@ -19,7 +19,7 @@ function current_scroll(){
      if(scrollY>=0){    // jeżęli scroller jest na pozycji 0 i więcej (pixele pionowe)
 
     
-      loopa.style.opacity = opacity_search;
+      loop.style.opacity = opacity_search;
       input_search.style.opacity = opacity_search;
      
      
@@ -38,7 +38,7 @@ function current_scroll(){
 
 
 
-      loopa.style.opacity = opacity_post;
+      loop.style.opacity = opacity_post;
       input_search.style.opacity = opacity_post;
 
 
