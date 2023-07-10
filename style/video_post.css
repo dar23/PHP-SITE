@@ -74,22 +74,27 @@ video {
 
 .ahref_counter li {
   margin: 0;
-  padding: 0;
+  letter-spacing: 15px;
 }
 
 .ahref_counter li a {
   text-decoration: none;
-  font-size:30px;
+  font-size:20px;
 text-align: center;
-  margin-right: 10px;
+ 
+  
   color: black; /* Dodatkowy styl - możesz zmienić na dowolny kolor tekstu */
- letter-spacing: 10px;
+
+
 }
+
+
 
 li a:hover{
 
 color:rgb(22, 126, 181);
-background: white;
+background-color: white;
+
 
 
 }

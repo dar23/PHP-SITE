@@ -3,7 +3,8 @@
    display: flex;
    justify-content: center; /* Wyśrodkowanie w poziomie */
    position: fixed;
-   top: 2%;
+   top:2%;
+   right:40px;
  }
  
  .common_element {
@@ -16,7 +17,7 @@
    justify-content: center; /* Wyśrodkowanie wzdłuż osi głównej */
    align-items: center;
    padding: 10px;
-   width: 300px;
+   width: 400px;
    height: 31px;
    border-radius: 50px;
    border: 2px solid rgb(255, 255, 255);
