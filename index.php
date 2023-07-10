@@ -183,9 +183,37 @@
          </div>
 
 
+
+
+
+
+
+         <ul class="ahref_counter_post">           
+             
+             
+             <?php      
+                  
+                  for($page = 1; $page<= $number_site; $page++) {  
+                                   
+                       echo '<li>'.'<a href = "index.php?page=' . $page . '" >' . $page . ' </a>'.'</li>';  
+                           
+                     }  
+                    
+             ?>    
+             
+             
+                   </ul>    
+
+
+
+
+
+
+
+
+
 </div>           
         
-
 
 
 

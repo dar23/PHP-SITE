@@ -115,4 +115,39 @@ a {
 
 
 
+.ahref_counter_post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top:50px;
+}
 
+.ahref_counter_post li {
+  margin: 0;
+  letter-spacing: 15px;
+}
+
+.ahref_counter_post li a {
+  text-decoration: none;
+  font-size:20px;
+text-align: center;
+ 
+  
+  color: black; /* Dodatkowy styl - możesz zmienić na dowolny kolor tekstu */
+
+
+}
+
+
+
+li a:hover{
+
+color:rgb(22, 126, 181);
+background-color: white;
+
+
+
+}
