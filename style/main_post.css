@@ -23,7 +23,7 @@
 }
 
 img {
-  width: 99.7%;
+  width: 800px;
   height: 100%;
   border-radius: 3px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
@@ -51,7 +51,7 @@ img {
 }
 
 .header_entry {
-  width: 100%;
+  width: 800px;
   height: 90px;
   margin-left: 10px;
   backdrop-filter: blur(0.6px);
@@ -122,7 +122,7 @@ a {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top:50px;
+  margin-top:40px;
 }
 
 .ahref_counter_post li {
