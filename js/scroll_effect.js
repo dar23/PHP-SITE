@@ -16,6 +16,8 @@ function current_scroll(){
   
    const opacity_search = 1 - (scrollY-1000 / window.innerHeight);
 
+   
+
      if(scrollY>=0){    // jeżęli scroller jest na pozycji 0 i więcej (pixele pionowe)
 
     
@@ -29,26 +31,19 @@ function current_scroll(){
         posts.style.opacity=opacity_post; // uchwyt do obiektu ze stylem opacity, przypisanie do niego zmiennej opacity_player
 
         entries_post.style.opacity=opacity_post;
-
-
+       
      }
 
 
      if(scrollY>=644){
 
-
-
       loop.style.opacity = opacity_post;
       input_search.style.opacity = opacity_post;
-
-
-
+     
      }
 
 
-
-
-     
+    
    
    
  

@@ -8,19 +8,20 @@
   height: 500px;
   opacity: 0;
   border-radius: 10px;
-  background-color: rebeccapurple;
+  
 }
 
 .entries_post {
   width: 800px;
-  height: 395px;
+  height: 375px;
   margin-top:25px;
-  overflow-y: hidden;
+
+ overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
   display: block;
-}
+} 
 
 img {
   width: 800px;
