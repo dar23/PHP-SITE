@@ -43,13 +43,11 @@ function current_scroll(){
      }
 
 
-    
-   
-   
- 
-
 
        
 }
   
 window.addEventListener("scroll",current_scroll);
+
+
+
