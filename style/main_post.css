@@ -37,7 +37,8 @@ img {
 .one_entry {
   width: 800px;
   height: 50px;
-  margin-bottom: 55px;  margin-top: 5px;
+  margin-bottom: 80px; 
+   margin-top: 5px;
   display: flex;
   justify-content: start;
   justify-items: center;
@@ -46,8 +47,9 @@ img {
 }
 
 .photos {
-  width: 150px;
-  height: 90px;
+  width: 200px;
+  height: 117px;
+
 }
 
 .header_entry {
@@ -115,7 +117,7 @@ a {
 
 
 
-.ahref_counter_post {
+.paginator_post {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,12 +127,12 @@ a {
   margin-top:40px;
 }
 
-.ahref_counter_post li {
+.paginator_post li {
   margin: 0;
   letter-spacing: 15px;
 }
 
-.ahref_counter_post li a {
+.paginator_post li a {
   text-decoration: none;
   font-size:20px;
 text-align: center;

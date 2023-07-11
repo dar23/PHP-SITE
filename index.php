@@ -104,7 +104,7 @@
        
 
 
-     <ul class="ahref_counter">           
+     <ul class="paginator_video">           
              
              
       <?php      
@@ -122,8 +122,6 @@
 
 
 </div>  
-
-
 
 
 
@@ -188,7 +186,7 @@
 
 
 
-         <ul class="ahref_counter_post">           
+         <ul class="paginator_post">           
              
              
              <?php      
