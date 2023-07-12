@@ -2,6 +2,12 @@ const html_class=document.querySelector('.html_class'); //  cała strona
 const record_video=document.querySelector('.records_video'); // kontener wewnątrz strony
 
 
+const main_post=document.querySelector('.records_video'); 
+
+
+
+
+
 const record_video_offsetTop = record_video.offsetTop; //górny brzeg div record_video;
 const page_height= window.innerHeight; //wysokość okna przeglądarki; 
 const record_video_height=record_video.offsetHeight; //wysokość kontenera record_video;
@@ -46,6 +52,8 @@ html_class.style.overflowY="visible";
 
 
 record_video.addEventListener('mouseleave', endscroll);
+
+
 
 
 
