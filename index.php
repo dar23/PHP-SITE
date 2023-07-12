@@ -8,7 +8,7 @@ require('linki_fonts.php');
 ?>
 
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="html_class">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +27,7 @@ require('linki_fonts.php');
     <link rel="stylesheet" href="style/part_1.css"> 
 </head>
 
-<body>
+<body >
 <!-- główna strona -->  
 <div class="part_1">
     <div class="search_container">   <!-- wyszukiwarka plików -->

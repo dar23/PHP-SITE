@@ -1,6 +1,10 @@
+
+
+
 .place_to_post {
   width: 100%;
   height: 100vh;
+ 
 }
 
 .main_post {
@@ -20,7 +24,7 @@
 }
 
 ::-webkit-scrollbar {
-  display: block;
+  display: none;
 } 
 
 img {
