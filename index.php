@@ -95,7 +95,7 @@ require('linki_fonts.php');
             $result = $conn->query($sqli);
             ?>
         </div>
-
+     
         <div class='entries_post'>   
             <?php             
             while($row = mysqli_fetch_array($result)){
@@ -109,6 +109,7 @@ require('linki_fonts.php');
             };
             ?>       
         </div>
+        
         <ul class="paginator_post">           
             <?php      
             for($page = 1; $page<= $number_site; $page++) {  
@@ -118,6 +119,24 @@ require('linki_fonts.php');
         </ul>
     </div>           
 </div>          
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--   PART TWO SITE (DOWN PART)    --> 
 <div id="panel">
@@ -142,6 +161,8 @@ require('linki_fonts.php');
 <script src="js/videos.js"></script>
 <script src="js/second_player.js"></script>
 <script src="js/hidden_scroll.js"></script>
+
 <script src="js/scroll_effect.js"></script>
+<script src="js/hidden_scroll_2.js"></script>
 </body>
 </html>

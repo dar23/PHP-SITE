@@ -2,8 +2,6 @@ const html_class=document.querySelector('.html_class'); //  cała strona
 const record_video=document.querySelector('.records_video'); // kontener wewnątrz strony
 
 
-const main_post=document.querySelector('.records_video'); 
-
 
 
 
@@ -58,7 +56,28 @@ record_video.addEventListener('mouseleave', endscroll);
 
 
 
+const html_class1 = document.querySelector('.html_class'); // cała strona
+const entry = document.querySelector('.entries_post'); // kontener wewnątrz strony
 
+const entry_offsetTop = entry.offsetTop; // górny brzeg div record_video;
+const page_heighter = window.innerHeight; // wysokość okna przeglądarki;
+const entry_height = entry.offsetHeight; // wysokość kontenera record_video;
+
+const scrollEndTwo = entry_offsetTop + entry_height - page_heighter;
+
+function stopscroller() {
+  if (window.scrollY >= scrollEndTwo) {
+    html_class1.style.overflowY = "hidden";
+  }
+}
+
+entry.addEventListener('mouseover', stopscroller);
+
+function endscroller() {
+  html_class1.style.overflowY = "visible";
+}
+
+entry.addEventListener('mouseleave', endscroller);
 
 
 
