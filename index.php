@@ -28,6 +28,26 @@ require('linki_fonts.php');
 </head>
 
 <body >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- główna strona -->  
 <div class="part_1">
     <div class="search_container">   <!-- wyszukiwarka plików -->
@@ -40,6 +60,38 @@ require('linki_fonts.php');
             </label>
         </form>
     </div>
+
+    <div class="side_right">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class='player'> <!--  videoplayer miejsce na filmiki   !-->
         <div class="video_player">  

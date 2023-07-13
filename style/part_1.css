@@ -6,10 +6,20 @@
   
   display: grid;
   grid-template-rows: auto auto; /* Ustawiamy dwie równe wysokości dla wierszy */
-  grid-gap: 20px;
+
   justify-content: center;
   align-items: center;
   margin-top: 40px;
   height: 200vh;
 
+}
+
+.side_right{
+
+  grid-area:1/2/1;
+ margin-left: 150px;
+
+width: 400px;
+height: 76vh;
+background-color: blue;
 }
