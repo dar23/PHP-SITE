@@ -1,0 +1,25 @@
+
+
+
+
+.main {
+  
+  display: grid;
+  grid-template-columns:800px 500px;
+
+  justify-content:center;
+  align-items: center;
+  margin-top: 40px;
+  height: 200vh;
+
+}
+
+.side_right{
+
+grid-area:1/2/1;
+ margin:auto;
+margin-top:190px;
+width: 300px;
+height: 900px;
+background-color: rgb(211, 211, 210);
+}

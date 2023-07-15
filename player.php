@@ -31,7 +31,7 @@ if(!empty($_FILES['my_video']['name'])  && isset($_POST['submit']) && isset($_FI
                              
                                
                             
-                                    $sql_videos="INSERT INTO entries_videos(video_describe,video_url) VALUES('$describe_video','$new_video_name')"; //dodanie nazwy pliku do bd
+                                    $sql_videos="INSERT INTO videos(video_describe,video_url) VALUES('$describe_video','$new_video_name')"; //dodanie nazwy pliku do bd
 
                                     $mysqli_query= $conn->query($sql_videos); // zapytanie dodające nazwę pliku 
 

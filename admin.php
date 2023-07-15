@@ -1,24 +1,5 @@
 <?php 
 
-if(isset($_POST['actual_title']) && !empty($_FILES['actual_file'])){
-
-$actual_title=$_POST['actual_title'];
-$actual_text=$_POST['actual_text'];
-$actual_file=basename($_FILES['actual_file']['name']);
-$direction_actual="actually/";
-$targetFileActually=$direction_actual.$actual_file;
-
-
-move_uploaded_file($_FILES['actual_file']['tmp_name'],$targetFileActually);
-
-$sql="INSERT INTO main_article (title,picture,article) VALUES('$actual_title', '$actual_file','$actual_text')";
-
-$conn->query($sql);
-
-header('location:index.php');
-
-
-}
 
 
 if(isset($_POST['main_title'])&& !empty($_FILES['main_file']['name'])){

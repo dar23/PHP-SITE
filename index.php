@@ -24,7 +24,7 @@ require('linki_fonts.php');
     <link rel="stylesheet" href="style/three_news.css">
     <link rel="stylesheet" href="style/video_post.css"> 
     <link rel="stylesheet" href="style/translate_menu.css"> 
-    <link rel="stylesheet" href="style/part_1.css"> 
+    <link rel="stylesheet" href="style/main.css"> 
 </head>
 
 <body >
@@ -49,7 +49,7 @@ require('linki_fonts.php');
 
 
 <!-- główna strona -->  
-<div class="part_1">
+<div class="main">
     <div class="search_container">   <!-- wyszukiwarka plików -->
         <form method="post">
             <label for="search" class="label_search">
@@ -61,21 +61,25 @@ require('linki_fonts.php');
         </form>
     </div>
 
+
+
     <div class="side_right">
 
+            <?php 
 
 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            ?>
 
-
-
-
-
-
-
-
-
-
-</div>
+    </div>
 
 
 
@@ -96,7 +100,7 @@ require('linki_fonts.php');
     <div class='player'> <!--  videoplayer miejsce na filmiki   !-->
         <div class="video_player">  
             <?php
-            $videos1 = "SELECT DISTINCT * FROM entries_videos ORDER BY id DESC ";
+            $videos1 = "SELECT DISTINCT * FROM videos ORDER BY id DESC ";
             $result = $conn->query($videos1);
             echo '<video controls>';
             while ($row = mysqli_fetch_array($result)){
@@ -109,7 +113,7 @@ require('linki_fonts.php');
         <div class="records_video">
             <?php
             require("pagination_video.php");
-            $videos = "SELECT DISTINCT * FROM entries_videos ORDER BY id DESC LIMIT $skip_page, $limit_on_page ";
+            $videos = "SELECT DISTINCT * FROM videos ORDER BY id DESC LIMIT $skip_page, $limit_on_page ";
             $result = $conn->query($videos);
             while($row = mysqli_fetch_array($result)){
                 $descr = $row['video_describe'];

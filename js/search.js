@@ -1,5 +1,5 @@
 let container_search=document.querySelector('.input_search');
-let body=document.querySelector('.part_1'); // 
+let body=document.querySelector('.main'); // 
 let main_info=document.querySelector('.main_info');
 
 
