@@ -74,7 +74,7 @@ img {
   position: relative;
   bottom: 50px;
   backdrop-filter: blur(0.6px);
-  background: rgba(220, 219, 219, 0.17);
+
   text-decoration: none;
   font-size: 17px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

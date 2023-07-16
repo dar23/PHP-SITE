@@ -1,7 +1,4 @@
 
-
-
-
 .main {
   
   display: grid;
@@ -14,12 +11,33 @@
 
 }
 
-.side_right{
+.side_right_video{
 
 grid-area:1/2/1;
  margin:auto;
-margin-top:190px;
+margin-top:185px;
 width: 300px;
 height: 900px;
-background-color: rgb(211, 211, 210);
+background-color: rgb(234, 234, 234);
+}
+
+
+
+.popular, .player_popular{
+display: flex;
+flex-direction: column;
+width: 300px;
+height: 200px;
+
+
+
+}
+
+.player_popular{
+width:299px;
+
+margin:0;
+border:0.1px solid rgb(97, 97, 97);
+
+
 }

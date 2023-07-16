@@ -63,21 +63,50 @@ require('linki_fonts.php');
 
 
 
-    <div class="side_right">
+    <div class="side_right_video">
 
             <?php 
 
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            ?>
+
+        //$sql = "CREATE TABLE new_popular_post (
+        //   id INT NOT NULL AUTO_INCREMENT,
+        //    post_id INT NOT NULL,
+        //   view_count INT NOT NULL,
+        //    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        //    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        //    PRIMARY KEY (id)
+        //);";
+        //$conn->query($sql);
+         
+         
+                   $popular_post="SELECT * FROM popular_post ORDER BY id DESC";
+
+         $result=$conn->query($popular_post); 
+         
+         ?>
+         
+
+
+
+
+         <div class="popular">
+                <div class="popular_video">
+                    <video src="" class="player_popular"></video>
+
+
+                </div>
+                <div class="describe"></div>
+                <div class="social_media"></div>
+
+         </div>
+         
+         
+         
+         
+         
+         
+     
 
     </div>
 
@@ -133,6 +162,26 @@ require('linki_fonts.php');
             ?>    
         </ul>     
     </div>  
+
+  
+         
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="place_to_posts"> <!--  miejsce na aktualne posty   !-->
         <div class='main_post'> 
