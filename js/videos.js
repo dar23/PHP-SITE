@@ -17,14 +17,10 @@ e.addEventListener('click', ()=>{ // każdy element listy kliknięty wykona kod 
 
  place_player.innerHTML= `<video controls autoplay  class="time_video"><source src='${video_source}' type="video/mp4"></video>`;
 
-
 });
 
 
 });
-
-
-
 
 
 
