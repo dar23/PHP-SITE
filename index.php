@@ -84,26 +84,26 @@ require('linki_fonts.php');
 
          $result=$conn->query($popular_post); 
          
-         ?>
+     
          
 
 
 
 
-         <div class="popular">
-                <div class="popular_video">
-                    <video src="" class="player_popular"></video>
+      echo  '<div class="popular">'
+                .'<div class="popular_video">'
+                    .'<video src="" class="player_popular"></video>'
 
 
-                </div>
-                <div class="describe"></div>
-                <div class="social_media"></div>
+                .'</div>'
+                .'<div class="describe"></div>'
+                .'<div class="social_media"></div>'
 
-         </div>
+         .'</div>';
          
          
          
-         
+        ?> 
          
          
      
