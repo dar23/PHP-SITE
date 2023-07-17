@@ -31,23 +31,6 @@ require('linki_fonts.php');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- główna strona -->  
 <div class="main">
     <div class="search_container">   <!-- wyszukiwarka plików -->
@@ -94,7 +77,7 @@ echo  '<div class="popular">'
         .'<div class="social_media"></div>'
         .'</div>';
          
-         
+       
          
         ?> 
          
@@ -102,6 +85,7 @@ echo  '<div class="popular">'
      
 
     </div>
+
 
 
 
@@ -129,6 +113,12 @@ echo  '<div class="popular">'
                 echo '<source src="actually/'.$row['video_url'].'" type="video/mp4">';
             }
             echo '</video>';
+           
+               
+
+
+
+
             ?>
         </div>
 
