@@ -15,18 +15,17 @@
 
 grid-area:1/2/1;
  margin:auto;
-margin-top:182px;
-width: 300px;
+margin-top:190px;
+margin-left: 50px;
+width: 250px;
 height: 900px;
-
+overflow-y: scroll;
 }
 
-
-
-.popular, .player_popular{
+.popular {
 display: flex;
 flex-direction: column;
-width: 300px;
+width: 200px;
 height: 200px;
 
 
@@ -34,10 +33,11 @@ height: 200px;
 }
 
 .player_popular{
-width:299px;
+width:200px;
+height: 120px;
 background-color: rgb(234, 234, 234);
 margin:0;
 
-
+margin-bottom: 15px;
 
 }

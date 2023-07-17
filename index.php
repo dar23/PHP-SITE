@@ -80,26 +80,19 @@ require('linki_fonts.php');
         //$conn->query($sql);
          
          
-                   $popular_post="SELECT * FROM popular_post ORDER BY id DESC";
+                   $popular_post="SELECT * FROM videos ORDER BY id DESC";
 
          $result=$conn->query($popular_post); 
-         
-     
-         
-
-
-
-
-      echo  '<div class="popular">'
-                .'<div class="popular_video">'
-                    .'<video src="" class="player_popular"></video>'
-
-
-                .'</div>'
-                .'<div class="describe"></div>'
-                .'<div class="social_media"></div>'
-
-         .'</div>';
+ 
+echo  '<div class="popular">'
+        .'<div class="popular_video">';
+             while ($row = mysqli_fetch_array($result)){
+                    echo '<video src="actually/'.$row['video_url'].'" class="player_popular"></video>';
+                    }
+        echo'</div>'
+        .'<div class="describe"></div>'
+        .'<div class="social_media"></div>'
+        .'</div>';
          
          
          
