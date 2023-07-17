@@ -15,10 +15,10 @@
 
 grid-area:1/2/1;
  margin:auto;
-margin-top:185px;
+margin-top:182px;
 width: 300px;
 height: 900px;
-background-color: rgb(234, 234, 234);
+
 }
 
 
@@ -35,9 +35,9 @@ height: 200px;
 
 .player_popular{
 width:299px;
-
+background-color: rgb(234, 234, 234);
 margin:0;
-border:0.1px solid rgb(97, 97, 97);
+
 
 
 }
