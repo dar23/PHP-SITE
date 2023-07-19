@@ -52,15 +52,15 @@ require('linki_fonts.php');
 
 
 
-        //$sql = "CREATE TABLE new_popular_post (
-        //   id INT NOT NULL AUTO_INCREMENT,
-        //    post_id INT NOT NULL,
-        //   view_count INT NOT NULL,
-        //    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-        //    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-        //    PRIMARY KEY (id)
-        //);";
-        //$conn->query($sql);
+     // $sql = "CREATE TABLE new_popular_post (
+      //    id INT NOT NULL AUTO_INCREMENT,
+      ///    post_id INT NOT NULL,
+      //    view_count INT NOT NULL,
+      //      created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      //     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+      //      PRIMARY KEY (id)
+     //  );";
+     //  $conn->query($sql);
          
          
                    $popular_post="SELECT * FROM videos ORDER BY id DESC";
@@ -85,18 +85,6 @@ echo  '<div class="popular">'
      
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
