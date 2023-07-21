@@ -70,9 +70,9 @@ require('linki_fonts.php');
         echo  '<div class="popular">'
                  .'<div class="popular_video">';
 
-                           while ($row = mysqli_fetch_array($result)){
-                                echo '<video src="actually/'.$row['video_url'].'" class="player_popular"></video>';
-                                 }
+                     while ($row = mysqli_fetch_array($result)){
+                            echo '<video src="actually/'.$row['video_url'].'" class="player_popular"></video>';
+                           }
 
         echo'</div>'
 
@@ -85,13 +85,7 @@ require('linki_fonts.php');
         ?> 
          
          
-     
-
     </div>
-
-
-
-
 
 
     <div class='player'> <!--  videoplayer miejsce na filmiki   !-->
@@ -134,11 +128,13 @@ require('linki_fonts.php');
         </div>                       
 
         <ul class="paginator_video">           
-            <?php      
+          
+          <?php      
             for($page = 1; $page<= $number_site; $page++) {  
                 echo '<li>'.'<a href = "index.php?page=' . $page . '" >' . $page . ' </a>'.'</li>';  
             }  
-            ?>    
+            ?>   
+             
         </ul>     
     </div>  
 
