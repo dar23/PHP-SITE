@@ -80,8 +80,6 @@ require('linki_fonts.php');
                 .'<div class="social_media"></div>'
                 .'</div>';
                 
-       
-         
         ?> 
          
          
@@ -116,11 +114,14 @@ require('linki_fonts.php');
             $result = $conn->query($videos);
             
             while($row = mysqli_fetch_array($result)){
-                        $descr = $row['video_describe'];
-                        echo '<div class="video_container">'
+                       
+                $descr = $row['video_describe'];
+                       
+                    echo '<div class="video_container">'
                         .'<video class="video_list">'.'<source src="actually/'.$row['video_url'].'">'.'</video>'
                         .'<div class="record_video">'.'<p class="title_text_video">'.mb_strimwidth("$descr",0,250,"...").'</p>'.'</div>'                                                      
                         .'</div>';
+
             };
 
             ?>
@@ -134,7 +135,7 @@ require('linki_fonts.php');
                 echo '<li>'.'<a href = "index.php?page=' . $page . '" >' . $page . ' </a>'.'</li>';  
             }  
             ?>   
-             
+
         </ul>     
     </div>  
 
