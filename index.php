@@ -67,16 +67,19 @@ require('linki_fonts.php');
 
          $result=$conn->query($popular_post); 
  
-echo  '<div class="popular">'
-        .'<div class="popular_video">';
-             while ($row = mysqli_fetch_array($result)){
-                    echo '<video src="actually/'.$row['video_url'].'" class="player_popular"></video>';
-                    }
+        echo  '<div class="popular">'
+                 .'<div class="popular_video">';
+
+                           while ($row = mysqli_fetch_array($result)){
+                                echo '<video src="actually/'.$row['video_url'].'" class="player_popular"></video>';
+                                 }
+
         echo'</div>'
-        .'<div class="describe"></div>'
-        .'<div class="social_media"></div>'
-        .'</div>';
-         
+
+                .'<div class="describe"></div>'
+                .'<div class="social_media"></div>'
+                .'</div>';
+                
        
          
         ?> 
@@ -94,35 +97,40 @@ echo  '<div class="popular">'
     <div class='player'> <!--  videoplayer miejsce na filmiki   !-->
         <div class="video_player">  
             <?php
+
             $videos1 = "SELECT DISTINCT * FROM videos ORDER BY id DESC ";
             $result = $conn->query($videos1);
+          
             echo '<video controls>';
+                   
             while ($row = mysqli_fetch_array($result)){
-                echo '<source src="actually/'.$row['video_url'].'" type="video/mp4">';
-            }
-            echo '</video>';
+                        echo '<source src="actually/'.$row['video_url'].'" type="video/mp4">';
+                    }
+
+            echo  '</video>';
            
-               
-
-
-
-
             ?>
+
         </div>
 
         <div class="records_video">
             <?php
+
             require("pagination_video.php");
+
             $videos = "SELECT DISTINCT * FROM videos ORDER BY id DESC LIMIT $skip_page, $limit_on_page ";
             $result = $conn->query($videos);
+            
             while($row = mysqli_fetch_array($result)){
-                $descr = $row['video_describe'];
-                echo '<div class="video_container">'
-                .'<video class="video_list">'.'<source src="actually/'.$row['video_url'].'">'.'</video>'
-                .'<div class="record_video">'.'<p class="title_text_video">'.mb_strimwidth("$descr",0,250,"...").'</p>'.'</div>'                                                      
-                .'</div>';
+                        $descr = $row['video_describe'];
+                        echo '<div class="video_container">'
+                        .'<video class="video_list">'.'<source src="actually/'.$row['video_url'].'">'.'</video>'
+                        .'<div class="record_video">'.'<p class="title_text_video">'.mb_strimwidth("$descr",0,250,"...").'</p>'.'</div>'                                                      
+                        .'</div>';
             };
+
             ?>
+
         </div>                       
 
         <ul class="paginator_video">           
