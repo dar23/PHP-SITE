@@ -1,10 +1,10 @@
 .search_container {
    width: 100%;
    display: flex;
-   justify-content: left; /* Wyśrodkowanie w poziomie */
+   justify-content: center; /* Wyśrodkowanie w poziomie */
    position: fixed;
-   top:16px;
- 
+   top:14px;
+   right: 140px;
  }
  
  .common_element {
@@ -16,9 +16,9 @@
    margin: 0 0 0 auto;
    justify-content: center; /* Wyśrodkowanie wzdłuż osi głównej */
    align-items: center;
-   padding: 10px;
+   padding: 15px;
    width: 400px;
-   height: 31px;
+   height: 30px;
    border-radius: 50px;
    border: 2px solid rgb(255, 255, 255);
    background-color: rgba(141, 139, 139, 0.286);
@@ -30,7 +30,7 @@
    color: rgb(255, 255, 255);
    transition: 0.2s;
    left: 86%;
-   top: -2px;
+   top: -1px;
    z-index: 100;
    visibility: visible;
  }
