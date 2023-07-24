@@ -10,15 +10,15 @@ let loop=document.querySelector('.fa');
 
 function current_scroll(){
 
-   const opacity_player = 1 - (scrollY*2 / window.innerHeight); //opacity od 0 pozycji zanika      
+   const opacity_player = 1 - (scrollY/ window.innerHeight); //opacity od 0 pozycji zanika      
    
-   const opacity_post= 0  +   (scrollY / window.innerHeight);  // opacity od 0 pozycji pojawia się
+   const opacity_post= 0  +   (scrollY/ window.innerHeight);  // opacity od 0 pozycji pojawia się
   
-   const opacity_search = 1 - (scrollY-1000 / window.innerHeight);
+   const opacity_search = 1- (scrollY-50/ window.innerHeight);
 
    
 
-     if(scrollY>=0){    // jeżęli scroller jest na pozycji 0 i więcej (pixele pionowe)
+     if(scrollY>=0 ){    // jeżęli scroller jest na pozycji 0 i więcej (pixele pionowe)
 
     
       loop.style.opacity = opacity_search;
@@ -35,12 +35,17 @@ function current_scroll(){
      }
 
 
-     if(scrollY>=644){
+     if(scrollY>=1000){
 
       loop.style.opacity = opacity_post;
       input_search.style.opacity = opacity_post;
      
-     }
+     }else[
+
+
+
+      
+     ]
 
 
 

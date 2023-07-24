@@ -1,10 +1,10 @@
 .search_container {
    width: 100%;
    display: flex;
-   justify-content: center; /* Wyśrodkowanie w poziomie */
+   justify-content: left; /* Wyśrodkowanie w poziomie */
    position: fixed;
-   top:2%;
-   right:40px;
+   top:16px;
+ 
  }
  
  .common_element {
