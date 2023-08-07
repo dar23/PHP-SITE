@@ -8,7 +8,10 @@ const video=document.querySelector('.video_list');
 const place_player=document.querySelector('.video_player');
 
 const time_video=document.querySelector('.time_video');
- 
+ const records_video=document.querySelector('.records_video');
+
+const video_container=document.querySelector('.video_container');
+
 let clickbajt=0; // do zliczania 
 
 
@@ -23,6 +26,7 @@ e.addEventListener('click', ()=>{ // każdy element listy kliknięty wykona kod 
 
  place_player.innerHTML= `<video controls autoplay  class="time_video"><source src='${video_source}' type="video/mp4"></video>`;
 
+console.log(1+clickbajt++);
 
 
 
@@ -38,13 +42,7 @@ e.addEventListener('click', ()=>{ // każdy element listy kliknięty wykona kod 
 
 
 
-
-
-
-
-
 });
-
 
 
 
