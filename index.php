@@ -118,8 +118,8 @@ require('linki_fonts.php');
                 $descr = $row['video_describe'];
                        
                     echo '<div class="video_container">'
-                        .'<video class="video_list">'.'<source src="actually/'.$row['video_url'].'">'.'</video>'
-                        .'<div class="record_video">'.'<p class="title_text_video">'.mb_strimwidth("$descr",0,250,"...").'</p>'.'</div>'                                                      
+                        .'<video class="video_list" >'.'<source src="actually/'.$row['video_url'].'">'.'</video>'
+                        .'<div class="record_video" style="width:100px;height:105px;padding-left:10px;font-size:20px">'.'<p class="title_text_video">'.mb_strimwidth("$descr",0,250,"...").'</p>'.'</div>'                                                      
                         .'</div>';
 
             };
