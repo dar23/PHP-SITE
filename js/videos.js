@@ -21,7 +21,7 @@ const count_div = document.querySelectorAll(".video_container>.record_video");
 
 for (let x = 0; video.length; x++)
   video[x].addEventListener("click", () => {
-    count_div[x].innerText = 1 + video[x].textContent++; // kontener na wypisanie klikniętego video
+ count_div[x].innerText = 1 + video[x].textContent++; // kontener na wypisanie klikniętego video
   });
 
 // stwórz nowe e.addEventlistener('click', ()=>{})
