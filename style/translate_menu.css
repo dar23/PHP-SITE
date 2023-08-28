@@ -32,6 +32,19 @@
   }
   
   
+  @keyframes side_right_video{
+
+    from{transform: translateX(0%);}
+    to{transform: translateX(31%);}
+    
+  }
+  
+  @keyframes side_right_video1 {
+  
+    from{transform: translateX(31%);}
+    to{transform: translateX(0%);}
+    
+  }
   
   
   

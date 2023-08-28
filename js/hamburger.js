@@ -18,7 +18,7 @@ hamburger.addEventListener('click', ()=>{
        
         const place_to_post=document.querySelector('.place_to_posts'); 
         const place_to_video=document.querySelector('.player');
-        
+        const side_right_video=document.querySelector('.side_right_video');
        
       //  const place_to_main=document.querySelector('.main_info'); 
 
@@ -27,6 +27,7 @@ if(menu_open){    // gdy kliknę, zostało dokonane a więc warunek spełniony, 
 
         place_to_post.style.animation="lefting 1s forwards"  // po kliknięciu w ikonę hamburgera warunek się spełnia
         place_to_video.style.animation="lefting_three 1s forwards" 
+        side_right_video.style.animation="side_right_video 1s forwards"
      //   place_to_main.style.animation="lefting 1s forwards" 
      
 } else{
@@ -34,7 +35,7 @@ if(menu_open){    // gdy kliknę, zostało dokonane a więc warunek spełniony, 
       
         place_to_post.style.animation="lefting1 1s forwards"  
         place_to_video.style.animation="lefting1_three 1s forwards" 
-      
+        side_right_video.style.animation="side_right_video1 1s forwards"
         //place_to_main.style.animation="lefting1 1s forwards" 
        
 }
