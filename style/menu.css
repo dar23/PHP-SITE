@@ -68,11 +68,6 @@ li a{
 
 
 
-li:hover{
-
-background-color:  rgb(73, 74, 74);
-
-}
 
 i,span{
 
@@ -80,9 +75,6 @@ margin:11px 20px 10px ;
 transform: scale(1.2);
 color:rgb(255, 255, 255);
 }
-
-
-
 
 
 
@@ -98,9 +90,10 @@ padding:11px 7px 10px ;
 
 
 
+
  a.active {
-   background:   rgb(69, 69, 69);
-    color: rgb(255, 255, 255);
+   background:   rgb(255, 255, 255);
+    color: rgb(77, 77, 77);
     font-size: 10px;
     display:block;
     font-size: 2.5vh;
@@ -126,23 +119,38 @@ display: block;
 
 .name_element_menu{
 
-animation: name_icon 0.3s forwards;
-
+animation: name_icon 1.3s forwards;
+color: rgb(255, 255, 255);
 font-weight:200;
-
+background-color: rgb(68, 68, 68);
 }
 
 @keyframes name_icon{
 
-from{color:rgb(255, 255, 255);text-shadow: 0 0 10px rgb(255, 255, 255);}
-to{color:rgb(255, 255, 255);text-shadow:  0 0 1px #ffffff,
-                                            0 0 11.4px #ffffff
+from{color:rgb(255, 255, 255);font-size: 12px;background-color:rgb(68, 68, 68);   text-shadow: 0 0 10px rgb(255, 255, 255);}
+to{color:rgb(255, 255, 255);font-size: 12px;background-color: rgb(68, 68, 68); text-shadow:  0 0 10px #ffffff,
+                                            0 0 11.4px #ffffff;
     
 }
 
 
 }
 
+.icon_animation{
+
+
+  color:rgb(255, 255, 255);
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  
  nav ol{
  list-style-type: none;
 position: fixed;
@@ -158,7 +166,7 @@ border-bottom-right-radius: 3px;
 }
 
 
-ol>li:hover{
+li:hover{
 
 
     border-top-right-radius: 3px;
