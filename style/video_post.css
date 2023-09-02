@@ -39,7 +39,7 @@ display:grid;
   height: 360px;
   margin-top:23px;
   overflow-y: scroll;
-  margin-bottom: 55px; background-color: aqua;
+  margin-bottom: 55px; 
 }
 
 .video_container {
