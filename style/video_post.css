@@ -1,12 +1,31 @@
+
+.main {
+  
+  display: grid;
+  grid-template-columns:800px 500px;
+
+  justify-content:center;
+  align-items: center;
+
+  height: 100vh;
+ 
+}
+
+
+
 .player {
   width: 100%;
 
+grid-area:1/1/1;
+ margin:auto;
+margin-top:185px;
   }
 
   
 .video_player {
   width: 800px;
   height: 500px;
+display:grid;
 }
 
 
@@ -22,14 +41,19 @@
 
 
 video {
+
+
+
+
   width: 100%;
   border-radius: 10px;
   height: 500px;
   object-fit: fill;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-  display: grid;
+  
   gap: 5px;
   border: 1px;
+  
 }
 
 
@@ -97,3 +121,13 @@ background-color: white;
 
 
 }
+.record_video{
+  background-color:red;
+  width:100px;
+  height:105px;
+  margin-left:10px;
+  font-size:20px;
+  
+ 
+ 
+ }

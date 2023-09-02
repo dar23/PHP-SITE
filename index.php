@@ -120,7 +120,14 @@ require('linki_fonts.php');
 
                     echo '<div class="video_container">'
                         . '<video class="video_list" >' . '<source src="actually/' . $row['video_url'] . '">' . '</video>'
-                        . '<div class="record_video" style="width:100px;height:105px;padding-left:10px;font-size:20px">' . '<p class="title_text_video">' . mb_strimwidth("$descr", 0, 250, "...") . '</p>' . '</div>'
+                        . '<div class="record_video">' .
+                                    '<form >'.'</form>'.
+
+
+                        
+                        
+                        '</div>'
+                        .'<p class="title_text_video">' . mb_strimwidth("$descr", 0, 250, "...") . '</p>' 
                         . '</div>';
                 };
 
@@ -141,7 +148,45 @@ require('linki_fonts.php');
 
 
 
-        <div class="place_to_posts"> <!--  miejsce na aktualne posty   !-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+      <!--   <div class="place_to_posts">  
             <div class='main_post'>
                 <?php
                 $sqli = "SELECT DISTINCT * FROM posts ORDER BY id DESC LIMIT 1";
@@ -180,7 +225,7 @@ require('linki_fonts.php');
                 }
                 ?>
             </ul>
-        </div>
+        </div> -->
     </div>
 
 
