@@ -33,17 +33,18 @@ display:grid;
 
 .records_video {
   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
   width: 920px !important;
-  height: 360px;
+  height: 400px;
   margin-top:23px;
   overflow-y: scroll;
   margin-bottom: 55px; 
 }
 
 .records_video>.video_container {
-  flex:0 1 auto;
+
   width: 50%;
   height: 180px;
   margin-left: 0;
