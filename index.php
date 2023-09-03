@@ -26,6 +26,7 @@ require('linki_fonts.php');
     <link rel="stylesheet" href="style/video_post.css">
     <link rel="stylesheet" href="style/translate_menu.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -122,13 +123,9 @@ require('linki_fonts.php');
                         . '<video class="video_list" >' . '<source src="actually/' . $row['video_url'] . '">' . '</video>'
                         . '<div class="record_video">' .
                      
-
-                        '<button class="material-symbols-outlined">
-                        thumb_up
-                        </button>'.
-                        '<button class="material-symbols-outlined">
-                        thumb_down
-                        </button>'.
+                        '<button class="ups">'.'<i class="fa-regular fa-thumbs-up"></i>'.'</button>'.
+                        
+                       '<button class="dow">'.'<i class="fa-regular fa-thumbs-down"></i>'.'</button>'.
 
                                
 
