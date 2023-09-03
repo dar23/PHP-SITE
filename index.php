@@ -121,8 +121,16 @@ require('linki_fonts.php');
                     echo '<div class="video_container">'
                         . '<video class="video_list" >' . '<source src="actually/' . $row['video_url'] . '">' . '</video>'
                         . '<div class="record_video">' .
-                                    '<form >'.'</form>'.
-                                    '<p class="title_text_video">' . mb_strimwidth("$descr", 0, 250, "...") . '</p>' .
+                     
+
+                        '<button class="material-symbols-outlined">
+                        thumb_up
+                        </button>'.
+                        '<button class="material-symbols-outlined">
+                        thumb_down
+                        </button>'.
+
+                               
 
                         
                         
@@ -152,7 +160,9 @@ require('linki_fonts.php');
 
 
 
+        <style>
 
+</style>
 
 
 
