@@ -166,7 +166,7 @@ video {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  color:black;
+  color:black;  margin-left:60px;
 }
 
 .paginator_video  li {
@@ -177,10 +177,10 @@ video {
 .paginator_video  li a {
   text-decoration: none;
   font-size:20px;
-  text-align: center;
+  text-align: center !important;
   color: rgb(0, 0, 0) !important; /* Dodatkowy styl - możesz zmienić na dowolny kolor tekstu */
-
-
+  
+  
 }
 
 
