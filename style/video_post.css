@@ -59,7 +59,7 @@ display:grid;
 .record_video{
 
   display: flex; justify-content: center;
-  align-items:end;
+  align-items:center;  flex-direction: column;
   background-color: rgba(160, 160, 160, 0.2);
  border-top-left-radius: 5px;
  border-top-right-radius:5px ;
@@ -76,11 +76,28 @@ display:grid;
  .material-symbols-outlined {
   color:black;
 
-  font-weight:500;
+  font-weight:200;
   font-size:30px;
-  border:none;margin-right:5px;
-  margin-bottom: 14px;
+  border:none;
+  margin:5px;
+ 
  }
+
+
+.material-symbols-outlined{
+  fill: none;
+  transition: fill 0.2s ease-in-out;
+}
+
+.material-symbols-outlined:hover {
+  fill: red;
+}
+
+
+
+
+
+
 
 video {
 
