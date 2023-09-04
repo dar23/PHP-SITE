@@ -83,7 +83,7 @@ background-color: rgba(155, 155, 155, 0.096);
 
 button.ups:hover{
 
-background-color: rgb(84, 201, 5);
+background-color: rgb(173, 173, 173);
 
 
 }
@@ -91,7 +91,7 @@ background-color: rgb(84, 201, 5);
 
 button.dow:hover{
 
-  background-color: rgb(245, 40, 4);
+  background-color:rgb(173, 173, 173);
   
   
   }
@@ -103,7 +103,7 @@ button.dow:hover{
  .fa-regular.fa-thumbs-up{
 
   font-weight:100;
-  font-size:15px;
+  font-size:20px;
 position: inherit;
 color:red;
 
@@ -113,17 +113,27 @@ color:red;
 
 
   font-weight:100;
-  font-size:15px;
+  font-size:20px;
 position: inherit;
 
 color:black;
  }
 
 
+ .video_container .record_video .ups i {
+  color: black !important;
+}
 
+.video_container .record_video .dow i {
+  color: black !important;
+}
+.video_container .record_video .ups:hover i {
+  color: rgb(255, 255, 255) !important;
+}
 
-
-
+.video_container .record_video .dow:hover i  {
+  color: rgb(255, 255, 255) !important;
+}
 video {
 
   width: 100%;
