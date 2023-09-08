@@ -23,7 +23,7 @@ margin-top:185px;
 
   
 .video_player {
-  width: 920px;
+  width: 900px;
   height: 500px;
 display:grid;
 }
@@ -31,7 +31,7 @@ display:grid;
 
 
 
-.records_video {
+.records_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -43,7 +43,7 @@ display:grid;
   margin-bottom: 55px; 
 }
 
-.records_video>.video_container {
+.place_to_video {
 
   width: 50%;
   height: 180px;
@@ -58,8 +58,10 @@ display:grid;
 
 .record_video{
 
-  display: flex; justify-content: center;
-  align-items:center;  flex-direction: column;
+  display: flex; 
+  justify-content: end;
+  align-items:center;  
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.2);
  border-top-left-radius: 5px;
  border-top-right-radius:5px ;
@@ -103,9 +105,9 @@ button.dow:hover{
  .fa-regular.fa-thumbs-up{
 
   font-weight:100;
-  font-size:20px;
+  font-size:12px;
 position: inherit;
-color:red;
+color:black;
 
  }
 
@@ -113,31 +115,33 @@ color:red;
 
 
   font-weight:100;
-  font-size:20px;
+  font-size:12px;
 position: inherit;
 
 color:black;
  }
 
 
- .video_container .record_video .ups i {
-  color: black !important;
+ .place_to_video .record_video .ups i {
+  color: rgb(0, 0, 0) !important;
 }
 
-.video_container .record_video .dow i {
-  color: black !important;
+.place_to_video .record_video .dow i {
+  color: rgb(0, 0, 0) !important;
 }
-.video_container .record_video .ups:hover i {
+.place_to_video .record_video .ups:hover i {
   color: rgb(255, 255, 255) !important;
 }
 
-.video_container .record_video .dow:hover i  {
+.place_to_video .record_video .dow:hover i  {
   color: rgb(255, 255, 255) !important;
 }
+
+
 video {
 
   width: 100%;
-  border-radius: 10px;
+ 
   height: 500px;
   object-fit: fill;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
@@ -229,7 +233,7 @@ background-color: white;
 
   video.video_list {
    width: 100%;
-   height: auto;
+   height: auto;            
    margin: 0;
   }
 

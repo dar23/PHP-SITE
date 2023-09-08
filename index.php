@@ -107,7 +107,7 @@ require('linki_fonts.php');
 
             </div>
 
-            <div class="records_video">
+            <div class="records_container">
                 <?php
 
                 require("pagination_video.php");
@@ -119,18 +119,15 @@ require('linki_fonts.php');
 
                     $descr = $row['video_describe'];
 
-                    echo '<div class="video_container">'
-                        . '<video class="video_list" >' . '<source src="actually/' . $row['video_url'] . '">' . '</video>'
-                        . '<div class="record_video">' .
+                    echo '<div class="place_to_video">'
+                             . '<video class="video_list" >' . '<source src="actually/' . $row['video_url'] . '">' . '</video>'
+                             . '<div class="record_video">' .
                      
-                        '<button class="ups" style="color: red";>'.'<i class="fa-regular fa-thumbs-up"></i>'.'</button>'.
+                            '<button class="ups">'.'<i class="fa-regular fa-thumbs-up"></i>'.'</button>'.
                         
-                       '<button class="dow">'.'<i class="fa-regular fa-thumbs-down"></i>'.'</button>'.
+                          '<button class="dow">'.'<i class="fa-regular fa-thumbs-down"></i>'.'</button>'.
 
-                               
-
-                        
-                        
+  
                         '</div>'
                         
                         . '</div>';
