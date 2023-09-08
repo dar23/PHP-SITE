@@ -98,7 +98,13 @@ button.dow:hover{
   
   }
   
+  button.mes:hover{
 
+    background-color:rgb(173, 173, 173);
+    
+    
+    }
+    
 
 
 
@@ -121,6 +127,15 @@ position: inherit;
 color:black;
  }
 
+.fa-brands.fa-facebook-messenger{
+
+  font-weight:100;
+  font-size:12px;
+position: inherit;
+
+color:black !important;
+
+ }
 
  .place_to_video .record_video .ups i {
   color: rgb(0, 0, 0) !important;
@@ -129,6 +144,17 @@ color:black;
 .place_to_video .record_video .dow i {
   color: rgb(0, 0, 0) !important;
 }
+.place_to_video .record_video .mes i{
+
+
+  color: rgb(0, 0, 0) !important;
+
+}
+
+
+
+
+
 .place_to_video .record_video .ups:hover i {
   color: rgb(255, 255, 255) !important;
 }
@@ -136,7 +162,12 @@ color:black;
 .place_to_video .record_video .dow:hover i  {
   color: rgb(255, 255, 255) !important;
 }
+.place_to_video .record_video .mes:hover i{
 
+
+  color: rgb(255, 255, 255) !important;
+
+}
 
 video {
 
