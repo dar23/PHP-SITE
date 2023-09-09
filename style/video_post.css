@@ -113,93 +113,48 @@ button.dow:hover{
       }
       
 
+ .fa-brands.fa-whatsapp,
 
- .fa-regular.fa-thumbs-up{
+ .fa-regular.fa-thumbs-up,
 
-  font-weight:100;
-  font-size:12px;
-position: inherit;
-color:black;
-
- }
+ .fa-brands.fa-facebook-messenger,
 
 .fa-regular.fa-thumbs-down{
 
 
   font-weight:100;
-  font-size:12px;
-position: inherit;
-
-color:black;
- }
-
-.fa-brands.fa-facebook-messenger{
-
-  font-weight:100;
-  font-size:12px;
-position: inherit;
-
-color:black !important;
+  font-size:12.5px;
+  position: inherit;
 
  }
 
 
- .fa-brands.fa-whatsapp{
+ 
+ .place_to_video .record_video .dow i, 
 
-
-  font-weight:100;
-  font-size:14px;
-position: inherit;
-
-color:black;
- }
-
-
-
-
-
-
-
-
-
+ .place_to_video .record_video .mes i,
+ 
+ .place_to_video .record_video .what i,
 
  .place_to_video .record_video .ups i {
-  color: rgb(0, 0, 0) !important;
-}
-
-.place_to_video .record_video .dow i {
-  color: rgb(0, 0, 0) !important;
-}
-.place_to_video .record_video .mes i{
 
 
   color: rgb(0, 0, 0) !important;
 
-}
-
-.place_to_video .record_video .what i{
-
-
-  color: rgb(0, 0, 0) !important;
 
 }
 
 
 
 
-.place_to_video .record_video .ups:hover i {
-  color: rgb(255, 255, 255) !important;
-}
-
-.place_to_video .record_video .dow:hover i  {
-  color: rgb(255, 255, 255) !important;
-}
-.place_to_video .record_video .mes:hover i{
+.place_to_video .record_video .ups:hover i,
 
 
-  color: rgb(255, 255, 255) !important;
 
-}
+.place_to_video .record_video .dow:hover i,
+
+
+.place_to_video .record_video .mes:hover i,
 
 .place_to_video .record_video .what:hover i{
 
