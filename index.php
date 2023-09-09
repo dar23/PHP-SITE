@@ -27,6 +27,8 @@ require('linki_fonts.php');
     <link rel="stylesheet" href="style/translate_menu.css">
     <link rel="stylesheet" href="style/main.css">
     <script src="https://kit.fontawesome.com/6d745535f9.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -120,22 +122,20 @@ require('linki_fonts.php');
                     $descr = $row['video_describe'];
 
                     echo '<div class="place_to_video">'
-                             . '<video class="video_list" >' . '<source src="actually/' . $row['video_url'] . '">' . '</video>'
+                             . '<video class="video_list" >'.'<source src="actually/' . $row['video_url'] . '">' . '</video>'
                              . '<div class="record_video">' .
 
-                             '<button class="lin">'. '<i class="fa-solid fa-link"></i>'.'</button>'.
-
+                             '<button class="lin">'. '<i class="fa-regular fa-link"></i>'.'</button>'.
 
                              '<button class="ups">'.'<i class="fa-regular fa-thumbs-up"></i>'.'</button>'.
                         
                              '<button class="dow">'.'<i class="fa-regular fa-thumbs-down"></i>'.'</button>'.
 
-                             '<button class="what">'    .  '<i class="fa-brands fa-whatsapp"></i> '.'</button >'.
-
+                             '<button class="what">'.'<i class="fa-brands fa-whatsapp"></i> '.'</button >'.
 
                              '<button class="mes">'.'<i class="fa-brands fa-facebook-messenger"></i>'.'</button>'.
 
-                           
+                             
 
   
                         '</div>'
