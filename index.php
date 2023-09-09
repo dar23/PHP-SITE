@@ -124,6 +124,9 @@ require('linki_fonts.php');
                              . '<div class="record_video">' .
                      
 
+                             '<button class="what">'    .  '<i class="fa-brands fa-whatsapp"></i> '.'</button >'.
+
+
                              '<button class="mes">'.'<i class="fa-brands fa-facebook-messenger"></i>'.'</button>'.
 
                             '<button class="ups">'.'<i class="fa-regular fa-thumbs-up"></i>'.'</button>'.

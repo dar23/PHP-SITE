@@ -105,7 +105,13 @@ button.dow:hover{
     
     }
     
+    button.what:hover{
 
+      background-color:rgb(173, 173, 173);
+      
+      
+      }
+      
 
 
  .fa-regular.fa-thumbs-up{
@@ -137,6 +143,26 @@ color:black !important;
 
  }
 
+
+ .fa-brands.fa-whatsapp{
+
+
+  font-weight:100;
+  font-size:14px;
+position: inherit;
+
+color:black;
+ }
+
+
+
+
+
+
+
+
+
+
  .place_to_video .record_video .ups i {
   color: rgb(0, 0, 0) !important;
 }
@@ -151,6 +177,12 @@ color:black !important;
 
 }
 
+.place_to_video .record_video .what i{
+
+
+  color: rgb(0, 0, 0) !important;
+
+}
 
 
 
@@ -168,6 +200,17 @@ color:black !important;
   color: rgb(255, 255, 255) !important;
 
 }
+
+.place_to_video .record_video .what:hover i{
+
+
+  color: rgb(255, 255, 255) !important;
+
+}
+
+
+
+
 
 video {
 
