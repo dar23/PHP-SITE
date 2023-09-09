@@ -111,7 +111,23 @@ button.dow:hover{
       
       
       }
+
+
+      button.lin:hover{
+
+        background-color:rgb(173, 173, 173);
+        
+        
+        }
+
+
+
+
+
+
+
       
+  .fa-solid.fa-link,
 
  .fa-brands.fa-whatsapp,
 
@@ -128,7 +144,7 @@ button.dow:hover{
 
  }
 
-
+ .place_to_video .record_video .lin i, 
  
  .place_to_video .record_video .dow i, 
 
@@ -147,9 +163,9 @@ button.dow:hover{
 
 
 
+.place_to_video .record_video .lin:hover i,
+
 .place_to_video .record_video .ups:hover i,
-
-
 
 .place_to_video .record_video .dow:hover i,
 
