@@ -125,7 +125,7 @@ require('linki_fonts.php');
                              . '<video class="video_list" >'.'<source src="actually/' . $row['video_url'] . '">' . '</video>'
                              . '<div class="record_video">' .
 
-                             '<button class="lin">'. '<i class="fa-regular fa-link"></i>'.'</button>'.
+                             '<button class="lin">'. '<i class="fa-solid fa-link"></i>'.'</button>'.
 
                              '<button class="ups">'.'<i class="fa-regular fa-thumbs-up"></i>'.'</button>'.
                         
