@@ -38,7 +38,7 @@ display:grid;
   flex-direction: row;
   width: 920px !important;
   height: 400px;
-  margin-top:23px;
+  margin-top:13px;
   overflow-y: scroll;
   margin-bottom: 55px; 
 }
@@ -46,10 +46,10 @@ display:grid;
 .place_to_video {
 
   width: 50%;
-  height: 180px;
+  height: 150px;
   margin-left: 0;
-  margin-top: 5px;
-  margin-bottom:30px;
+  margin-top: 55px;
+  margin-bottom:40px;
   display: flex;
   flex-direction: row;
  
@@ -72,12 +72,13 @@ display:grid;
   
   margin: 5px;
 
-  margin-top: 10px;
+  margin-top: 20px;
+  padding-top: 13px;
  }
 
 
 button{
-
+width: 100%;
 margin:2px;
 border:none;
 background-color: rgba(155, 155, 155, 0.096);
@@ -120,14 +121,12 @@ button.dow:hover{
         
         }
 
+        
 
 
-
-
-
-
+        .material-symbols-outlined,
       
-  .fa-solid.fa-link,
+  .fa-solid.fa-up-right-from-square,
 
  .fa-brands.fa-whatsapp,
 
@@ -143,6 +142,20 @@ button.dow:hover{
   position: inherit;
 
  }
+
+
+ .material-symbols-outlined{
+
+ font-size:17px !important;
+
+
+ }
+
+
+
+
+
+
 
  .place_to_video .record_video .lin i, 
  
@@ -201,7 +214,7 @@ video {
 
 .video_list {
   width: 100%;
-  height: 180px;
+  height: 200px;
   margin: 10px;
 
 }

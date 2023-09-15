@@ -29,6 +29,10 @@ require('linki_fonts.php');
     <script src="https://kit.fontawesome.com/6d745535f9.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
 </head>
 
 <body>
@@ -121,11 +125,14 @@ require('linki_fonts.php');
 
                     $descr = $row['video_describe'];
 
-                    echo '<div class="place_to_video">'
-                             . '<video class="video_list" >'.'<source src="actually/' . $row['video_url'] . '">' . '</video>'
-                             . '<div class="record_video">' .
+                    echo '<div class="place_to_video">'.
 
-                             '<button class="lin">'. '<i class="fa-solid fa-link"></i>'.'</button>'.
+                    
+     '<video class="video_list" >'.'<source src="actually/' . $row['video_url'] . '">' . '</video>'.
+                                                     
+               '<div class="record_video">'.
+
+                             '<button class="lin">'.'<i class="material-symbols-outlined">share</i>'.'</button>'.
 
                              '<button class="ups">'.'<i class="fa-regular fa-thumbs-up"></i>'.'</button>'.
                         
@@ -135,12 +142,10 @@ require('linki_fonts.php');
 
                              '<button class="mes">'.'<i class="fa-brands fa-facebook-messenger"></i>'.'</button>'.
 
-                             
 
-  
-                        '</div>'
-                        
-                        . '</div>';
+              '</div>'.
+
+    '</div>';
                 };
 
                 ?>
