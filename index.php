@@ -130,7 +130,7 @@ require('linki_fonts.php');
                                             
                                  '<video class="video_list" >'.'<source src="actually/' . $row['video_url'] . '">' . '</video>'.
                                                                            
-                                            '<div class="record_video">'.
+                                            '<div class="place_to_icon">'.
 
                                                      '<button class="lin">'.'<i class="material-symbols-outlined">share</i>'.'</button>'.
 

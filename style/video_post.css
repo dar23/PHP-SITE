@@ -56,7 +56,7 @@ display:grid;
 }
 
 
-.record_video{
+.place_to_icon{
 
   display: flex; 
   justify-content: end;
@@ -78,10 +78,10 @@ display:grid;
 
 
 button{
-width: 100%;
+width: 80%;
 margin:2px;
 border:none;
-background-color: rgba(155, 155, 155, 0.096);
+background-color: rgba(88, 88, 88, 0.116);
 }
 
 button.ups:hover{
@@ -157,15 +157,15 @@ button.dow:hover{
 
 
 
- .place_to_video .record_video .lin i, 
+ .place_to_video .place_to_icon .lin i, 
  
- .place_to_video .record_video .dow i, 
+ .place_to_video .place_to_icon .dow i, 
 
- .place_to_video .record_video .mes i,
+ .place_to_video .place_to_icon .mes i,
  
- .place_to_video .record_video .what i,
+ .place_to_video .place_to_icon .what i,
 
- .place_to_video .record_video .ups i {
+ .place_to_video .place_to_icon .ups i {
 
 
   color: rgb(0, 0, 0) !important;
@@ -176,16 +176,16 @@ button.dow:hover{
 
 
 
-.place_to_video .record_video .lin:hover i,
+.place_to_video .place_to_icon .lin:hover i,
 
-.place_to_video .record_video .ups:hover i,
+.place_to_video .place_to_icon .ups:hover i,
 
-.place_to_video .record_video .dow:hover i,
+.place_to_video .place_to_icon .dow:hover i,
 
 
-.place_to_video .record_video .mes:hover i,
+.place_to_video .place_to_icon .mes:hover i,
 
-.place_to_video .record_video .what:hover i{
+.place_to_video .place_to_icon .what:hover i{
 
 
   color: rgb(255, 255, 255) !important;
