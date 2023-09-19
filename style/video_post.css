@@ -214,7 +214,7 @@ video {
 
 
 .video_record {
-  width: 100%;
+  width:350px !important;
   height: 200px;
   margin: 10px;
 
