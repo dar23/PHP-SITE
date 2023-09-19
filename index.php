@@ -128,7 +128,7 @@ require('linki_fonts.php');
                     echo '<div class="place_to_video">'.
 
                                             
-                                 '<video class="video_list" >'.'<source src="actually/' . $row['video_url'] . '">' . '</video>'.
+                                 '<video class="video_record" >'.'<source src="actually/' . $row['video_url'] . '">' . '</video>'.
                                                                            
                                             '<div class="place_to_icon">'.
 
