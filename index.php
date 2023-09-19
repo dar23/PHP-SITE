@@ -54,7 +54,7 @@ require('linki_fonts.php');
 
 
 
-        <div class="side_right_video">
+    <!--   <div class="side_right_video">
 
             <?php
 
@@ -91,7 +91,7 @@ require('linki_fonts.php');
             ?>
 
 
-        </div>
+        </div> !-->
 
 
         <div class='player'> <!--  videoplayer miejsce na filmiki   !-->
