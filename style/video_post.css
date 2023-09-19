@@ -2,11 +2,9 @@
 .main {
   
   display: grid;
-  grid-template-columns:800px 500px;
-
+  grid-template-rows:1fr;
   justify-content:center;
   align-items: center;
-
   height: 100vh;
  
 }
@@ -37,8 +35,8 @@ display:grid;
   justify-content: space-between;
   flex-direction: row;
   width: 920px !important;
-  height: 400px;
-  margin-top:13px;
+  height: 470px;
+  margin-top:10px;
   overflow-y: scroll;
   margin-bottom: 55px; 
 }
