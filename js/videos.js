@@ -1,4 +1,4 @@
-const all_video = document.querySelectorAll(".video_list");
+const all_video = document.querySelectorAll(".place_to_video");
 //zmienna zawiera wszystkie elementy (video bez kontrolek) listy z filmami
 const place_player = document.querySelector(".video_player");
 const time_video = document.querySelector(".time_video");
