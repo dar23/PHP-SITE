@@ -145,9 +145,6 @@ require('linki_fonts.php');
                                              '</div>'
 
                         .'</div>';
-
-
-                        
                 };
 
                 ?>
