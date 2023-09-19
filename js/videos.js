@@ -17,9 +17,37 @@ all_video.forEach((e) => {
     const video_source = e.querySelector("source").src; // zmienna pobierająca ścieżkę klikniętego filmiku :)
 
     place_player.innerHTML = `<video controls autoplay  class="time_video"><source src='${video_source}' type="video/mp4"></video>`;
-   
+    
   });
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //-----------------------------------------------------------------------------------------------------------------------//
