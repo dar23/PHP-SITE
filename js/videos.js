@@ -2,8 +2,15 @@ const all_video = document.querySelectorAll(".place_to_video");
 //zmienna zawiera wszystkie elementy (video bez kontrolek) listy z filmami
 const place_player = document.querySelector(".video_player");
 const time_video = document.querySelector(".time_video");
+const place_icon = document.querySelector(".place_to_icon");
+
+
+
+
+
 
 all_video.forEach((e) => {
+ 
   e.addEventListener("click", () => {
     // każdy element listy kliknięty wykona kod zawarty w klamrze
 
