@@ -23,7 +23,7 @@ margin-top:150px;
 .video_player {
   width: 900px;
   height: 480px;
-display:grid;
+
 }
 
 
@@ -46,7 +46,7 @@ display:grid;
   width: 50%;
   height: 150px;
   margin-left: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom:60px;
   display: flex;
   flex-direction: row;

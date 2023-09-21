@@ -2,14 +2,14 @@ const all_video = document.querySelectorAll(".place_to_video");
 //zmienna zawiera wszystkie elementy (video bez kontrolek) listy z filmami
 const place_player = document.querySelector(".video_player");
 const time_video = document.querySelector(".time_video");
-const place_icon = document.querySelector(".place_to_icon");
+const video_record = document.querySelectorAll(".video_record");
 
 
 
 
 
 
-all_video.forEach((e) => {
+video_record.forEach((e) => {
  
   e.addEventListener("click", () => {
     // każdy element listy kliknięty wykona kod zawarty w klamrze
@@ -18,30 +18,11 @@ all_video.forEach((e) => {
 
     place_player.innerHTML = `<video controls autoplay  class="time_video"><source src='${video_source}' type="video/mp4"></video>`;
     
+   
+    
   });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
