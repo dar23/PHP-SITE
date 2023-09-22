@@ -1,6 +1,6 @@
 <?php    
 
-$limit_on_page=10 ;  // ile rekordów ma być na stronie;
+$limit_on_page=24 ;  // ile rekordów ma być na stronie;
 
         if(isset($_GET['page'])){   
 
