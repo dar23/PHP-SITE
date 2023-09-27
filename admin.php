@@ -4,7 +4,7 @@
 
 if (isset($_POST['main_title']) && !empty($_FILES['main_file']['name'])) {
 
-e
+
   $title = $_POST['main_title'];
   $article = $_POST['main_text'];
   $picture = basename($_FILES['main_file']['name']);
