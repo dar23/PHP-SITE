@@ -1,12 +1,19 @@
+body{
 
-.main {
-  
-  display: grid;
-  grid-template-rows:1fr;
+  display: flex;
   justify-content:center;
   align-items: center;
+
+
+}
+
+
+
+
+.main {
+  width: 100%;
   height: 100vh;
- 
+
 }
 
 
@@ -14,16 +21,19 @@
 .player {
   width: 100%;
 
-
- margin:auto;
-margin-top:100px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  margin-top:100px;
   }
 
   
 .video_player {
   width: 1129px;
   height:600px;
-margin-bottom: 15px;
+  margin-bottom: 15px; 
+
 }
 
 
@@ -39,6 +49,7 @@ margin-bottom: 15px;
 
   overflow-y: scroll;
   margin-bottom: 25px; 
+margin-left: 70px;
 }
 
 .place_to_video {
@@ -263,138 +274,6 @@ li a:hover{
 
 color:rgb(22, 126, 181);
 background-color: white;
-
-
-
-}
-
-
-/* Dostosowanie do smartfonów */
-@media screen and (max-width: 768px ) {
-  .main {
-   
-    display:flex;
-    flex-direction:column;
-   margin: 0;
-  }
-
-  .records_video>.video_container {
-
-    width: 100%;
-    height: 500px;
-    margin-left: 0;
-    margin-top: 5px;
-    margin-bottom:0px;
-    display: flex;
-    flex-direction: column;
-   
-  }
-  
-
-  video.video_list {
-   width: 100%;
-   height: auto;            
-   margin: 0;
-  }
-
-
-
-
-  .player {
-
-  }
-
-  .video_player {
-   
-
-  }
- 
-
-
-   video.video_list {
- 
-   
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  .record_video {
-    display:none;
-  }
-
-  .video {
-    width: 100%; /* Pełna szerokość na smartfonach */
-    height: auto; /* Dopuszczalna wysokość */ 
-    
-  }
-
-  .title_text_video {
-   display: none;/* Większa czcionka dla lepszej czytelności */
-  }
-
-  .paginator_video {
-    margin-left: initial; /* Usunięcie marginesu z lewej strony */
-    justify-content: center; /* Wyśrodkowanie elementów paginatora */
-  }
-
-  .paginator_video li {
-    letter-spacing: 10px; /* Mniejsza odległość między elementami */
-  }
-
-  .popular_video {
-    display: none; /* Ukrycie sekcji "popular_video" na smartfonach */
-  }
-
- .side_right_video{
-
-
-display:none;
-
- }
-
- .search_container,.hamburger{
-
-
-  display:none;
-  
-   }
-
-  
-
 
 
 

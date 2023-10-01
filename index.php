@@ -40,7 +40,7 @@ require('linki_fonts.php');
 
 
     <!-- główna strona -->
-    <div class="main">
+<div class="main">
         <div class="search_container"> <!-- wyszukiwarka plików -->
             <form method="post">
                 <label for="search" class="label_search">
@@ -162,7 +162,7 @@ require('linki_fonts.php');
             </ul>
         </div>
 
-
+</div>
 
 
 
