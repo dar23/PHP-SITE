@@ -6,8 +6,8 @@ nav{
     flex-direction: column;
     justify-content: end;
   align-items: center;
-  width: 10%;
- height: 50%;
+  width: 150px;
+ height: 610px;
  
 }
 
@@ -16,11 +16,12 @@ nav{
 ul  {
     
    position: relative;
-    
+   border-radius: 15px;
     top:0;
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 610px;
     background: rgb(69, 69, 69);
    
     overflow: auto;
@@ -202,3 +203,8 @@ ol>li>a{
     
 
     
+    li.button_admin a {
+        display: flex;
+        align-items: center; /* Wyrównaj zawartość w pionie */
+        text-align: left;
+      }
