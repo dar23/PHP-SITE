@@ -252,6 +252,7 @@ video {
   margin: 0;
   padding: 0;
   color:black;  
+  background-color: white !important;
 }
 
 .paginator_video  li {
