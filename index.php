@@ -40,17 +40,18 @@ require('linki_fonts.php');
 
 
     <!-- główna strona -->
-<div class="main">
-        <div class="search_container"> <!-- wyszukiwarka plików -->
-            <form method="post">
-                <label for="search" class="label_search">
-                    <div class="common_element">
-                        <i class=" fa fa-search loop " aria-hidden="true"></i></input>
-                        <input type="text" name="searching" class="input_search" autocomplete="off" />
-                    </div>
-                </label>
-            </form>
-        </div>
+    <div class="main">
+        
+                <div class="search_container"> <!-- wyszukiwarka plików -->
+                    <form method="post">
+                        <label for="search" class="label_search">
+                            <div class="common_element">
+                                <i class=" fa fa-search loop " aria-hidden="true"></i></input>
+                                <input type="text" name="searching" class="input_search" autocomplete="off" />
+                            </div>
+                        </label>
+                    </form>
+                </div>
 
 
 
