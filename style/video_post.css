@@ -40,8 +40,8 @@ display: flex;
   height:440px;
 
   overflow-y: scroll;
-  margin-bottom: 25px; 
-margin-top: 20px;
+  margin-bottom: 15px; 
+margin-top: 5px;
 }
 
 .place_to_video {
@@ -62,7 +62,10 @@ video {
   height: 600px;
   object-fit: fill;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   
 }
 
@@ -70,7 +73,14 @@ video {
 
 
 .video_record {
-  width:350px !important;
+ 
+  flex-direction: row;
+  width:350px !important; 
+  box-shadow: 2px 2px 3px rgba(87, 86, 86, 0.5);
+  border-top-right-radius: 13px;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
   height: 200px;
   margin: 20px;
   margin-left: 0;
@@ -79,38 +89,11 @@ video {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .place_to_icon{
-
-  display: flex; 
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
   
-
- 
-
-
-
-
  }
 
 
@@ -120,7 +103,7 @@ display: flex;
 ;justify-content: start;
 
 
-margin:3px;
+margin:1px;
 border:none;
 background-color: white;
 
