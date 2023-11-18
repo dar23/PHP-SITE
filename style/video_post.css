@@ -49,7 +49,7 @@ margin-top: 5px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 15px;
+
 
  
 }
@@ -82,7 +82,7 @@ video {
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
   height: 200px;
-  margin: 20px;
+  margin: 10px;
   margin-left: 0;
   margin-right: 0;
 }
