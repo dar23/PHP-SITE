@@ -134,10 +134,12 @@ require('linki_fonts.php');
                                             '<div class="place_to_icon">'.
 
                                                      '<button class="lin">'.'<i class="material-symbols-outlined">share</i>'.'</button>'.
+                                                     
+                                                     '<button class="mes">'.'<i class="fa-brands fa-facebook-messenger"></i>'.'</button>'.
 
                                                      '<button class="what">'.'<i class="fa-brands fa-whatsapp"></i> '.'</button >'.
 
-                                                     '<button class="mes">'.'<i class="fa-brands fa-facebook-messenger"></i>'.'</button>'.
+                                                     
 
                                              '</div>'
 
