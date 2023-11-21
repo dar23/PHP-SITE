@@ -124,7 +124,7 @@ justify-content: center;
 .fa-regular.fa-thumbs-down{
 
 
-  font-weight:100;
+  font-weight:200;
   font-size:13px;
   position: inherit;
 
@@ -173,7 +173,7 @@ justify-content: center;
 
 .place_to_video .place_to_icon .what:hover i{
 
-  color: rgb(0, 0, 0) !important;
+  color: rgb(254, 254, 254) !important;
   font-weight:bold;
 transform: scale(1.8);
 
