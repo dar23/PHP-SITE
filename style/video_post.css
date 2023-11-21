@@ -85,13 +85,13 @@ video {
 
 .place_to_icon{
   position: relative;
- right: 5px;
   top: 0;
-  width: 20px;
+  width: 10px;
+  right:30px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: center;
+ justify-content: center;
 
  }
 
@@ -101,8 +101,9 @@ button{
   display: flex;
   flex-direction: column;
 
+
 border:none;
-background-color: rgba(255, 255, 255, 0);
+background-color: rgb(255, 255, 255);
 justify-content: center;
 
 }
