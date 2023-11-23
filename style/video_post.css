@@ -114,21 +114,17 @@ justify-content: center;
 
  .material-symbols-outlined,
       
-.fa-solid.fa-up-right-from-square,
-
  .fa-brands.fa-whatsapp,
 
- .fa-regular.fa-thumbs-up,
+ .fa-brands.fa-facebook-messenger
 
- .fa-brands.fa-facebook-messenger,
-
-.fa-regular.fa-thumbs-down{
+{
 
 
   font-weight:200;
   font-size:17px;
   position: inherit;
-
+ display:none;
  }
 
 
@@ -136,7 +132,7 @@ justify-content: center;
 
  font-size:21px !important;
  position: inherit;
-
+display:block;
  }
 
 

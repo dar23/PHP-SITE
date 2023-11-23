@@ -286,7 +286,7 @@ require('linki_fonts.php');
     <script src="js/videos.js"></script>
     <script src="js/second_player.js"></script>
     <script src="js/hidden_scroll.js"></script>
-
+    <script src="js/social_media.js"></script>
     <script src="js/scroll_effect.js"></script>
     <script src="js/hidden_scroll_2.js"></script>
 </body>
