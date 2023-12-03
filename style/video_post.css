@@ -109,17 +109,21 @@ justify-content: center;
 }
 
 
-   
+.material-symbols-outlined{
+
+  font-size:21px !important;
+  position: inherit;
+ display:block;
+  }
+ 
 
 
- .material-symbols-outlined,
       
  .fa-brands.fa-whatsapp,
 
  .fa-brands.fa-facebook-messenger
 
 {
-
 
   font-weight:200;
   font-size:17px;
@@ -128,30 +132,12 @@ justify-content: center;
  }
 
 
-.dupa{
-
+.turn_on_off{
 
 display: none;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
- .material-symbols-outlined{
-
- font-size:21px !important;
- position: inherit;
-display:block;
- }
 
 
 

@@ -1,24 +1,30 @@
-const social_media=document.querySelectorAll('.lin') ;
+document.addEventListener('DOMContentLoaded', function() {
+  const socialMediaIcons = document.querySelectorAll('.link');
+  const messengerIcon = document.querySelector('.messenger');
+  const whatsuppIcon = document.querySelector('.whatsupp');
+ 
+ 
+ 
+  messengerIcon.classList.add('turn_on_off');
+  whatsuppIcon.classList.add('turn_on_off');
+  
+  
+  
+  socialMediaIcons.forEach(function(icon) {
+
+    const messengerIcon = icon.nextElementSibling;
+    const whatsuppIcon = icon.nextElementSibling.nextElementSibling;
 
 
 
-
-
-
-social_media.forEach((e) => {
-
-  e.addEventListener("click", () => {
-    // każdy element listy kliknięty wykona kod zawarty w klamrze
- e.classList.toggle('dupa');
-
+      icon.addEventListener('click', function() {
+          // Toggleowanie klasy `turn_on_off` dla ikon Messengera i WhatsAppa
+          messengerIcon.classList.toggle('turn_on_off');
+          whatsuppIcon.classList.toggle('turn_on_off');
+      });
   });
-
 });
-
-
-
-
-
+ 
 //const bodys = document.querySelectorAll('.dupa');
 
 //bodys.forEach(function (element) {
