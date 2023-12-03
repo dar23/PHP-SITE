@@ -109,7 +109,7 @@ justify-content: center;
 }
 
 
-        
+   
 
 
  .material-symbols-outlined,
@@ -124,8 +124,26 @@ justify-content: center;
   font-weight:200;
   font-size:17px;
   position: inherit;
- display:none;
+
  }
+
+
+.dupa{
+
+
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
  .material-symbols-outlined{
@@ -225,6 +243,25 @@ li a:hover{
 color:rgb(22, 126, 181);
 background-color: white;
 
+
+
+}
+
+
+
+.block_whatsupp{
+
+display:block;
+
+}
+
+
+
+
+.block_face{
+
+
+display:block;
 
 
 }

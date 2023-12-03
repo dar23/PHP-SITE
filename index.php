@@ -135,9 +135,9 @@ require('linki_fonts.php');
 
                                                      '<button class="lin">'.'<i class="material-symbols-outlined">share</i>'.'</button>'.
                                                      
-                                                     '<button class="mes">'.'<i class="fa-brands fa-facebook-messenger"></i>'.'</button>'.
+                                                     '<button class="messenger">'.'<i class="fa-brands fa-facebook-messenger"></i>'.'</button>'.
 
-                                                     '<button class="what">'.'<i class="fa-brands fa-whatsapp"></i> '.'</button >'.
+                                                     '<button class="whatsupp">'.'<i class="fa-brands fa-whatsapp"></i> '.'</button >'.
 
                                                      
 
@@ -161,6 +161,18 @@ require('linki_fonts.php');
             </ul>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+        
 </div>
 
 
