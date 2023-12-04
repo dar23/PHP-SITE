@@ -1,16 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   
   const socialMediaIcons = document.querySelectorAll('.link');
-  const messengerIcon = document.querySelector('.messenger');
-  const whatsuppIcon = document.querySelector('.whatsupp');
- 
- 
- 
-  messengerIcon.classList.add('turn_on_off');
-  whatsuppIcon.classList.add('turn_on_off');
-  
-  
-  
+
+
   socialMediaIcons.forEach(function(icon) {
 
     const messengerIcon = icon.nextElementSibling;
