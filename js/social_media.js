@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const whatsuppIcon = icon.nextElementSibling.nextElementSibling;
 
 
-
       icon.addEventListener('click', function() {
           // Toggleowanie klasy `turn_on_off` dla ikon Messengera i WhatsAppa
           messengerIcon.classList.toggle('turn_on_off');
