@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  
   const socialMediaIcons = document.querySelectorAll('.link');
   const messengerIcon = document.querySelector('.messenger');
   const whatsuppIcon = document.querySelector('.whatsupp');
