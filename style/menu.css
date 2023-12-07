@@ -13,5 +13,10 @@ nav ul {
     margin-right: 10px; /* Opcjonalny odstęp między elementami */
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
+ 
     
+}
+a{
+margin:10px;
+
 }
