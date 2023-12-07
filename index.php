@@ -1,7 +1,7 @@
 <?php
 require("connection.php");
 require('logowanie.php');
-require('menu.php');
+
 require('hamburger.php');
 require('player.php');
 require('linki_fonts.php');
@@ -36,11 +36,23 @@ require('linki_fonts.php');
 </head>
 
 <body>
-
+<nav>
+ 
+ <ul>
+ 
+     <li class="button_admin"><a>DODAJ FILMIK</a></li>
+     <li class="button_admin"><a>DODAJ MEMA</a></li>
+    
+ </ul>
+ 
+ </nav>    
 
 
     <!-- główna strona -->
     <div class="main">
+
+
+
 
     
      <!-- wyszukiwarka plików 

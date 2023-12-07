@@ -1,9 +1,17 @@
 nav ul {
+    position: absolute;
     list-style: none;
     padding: 0;
     display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center; /* Wyśrodkowanie w pionie *
   }
   
   nav ul li {
     margin-right: 10px; /* Opcjonalny odstęp między elementami */
-  }
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    
+}
