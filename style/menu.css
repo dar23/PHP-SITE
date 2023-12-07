@@ -1,0 +1,9 @@
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px; /* Opcjonalny odstęp między elementami */
+  }
