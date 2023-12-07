@@ -21,8 +21,8 @@ body, html {
   max-height: 440px;
   overflow-y: scroll;
  
-  margin-top: 10px;
-  gap: 23px;
+  margin-top: 15px;
+  gap: 33px;
 }
 
 /* Kontener dla pojedynczego wideo */
@@ -31,7 +31,7 @@ body, html {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 10px;
+  margin: 1px;
   margin-left:0;
   height: 140px;
   width: 240px;
@@ -46,7 +46,7 @@ body, html {
   align-items: flex-start;
   flex-direction: column;
   margin-top: 150px;
-
+  margin-left: 150px;
 }
 
 /* Odtwarzacz wideo */
@@ -54,7 +54,7 @@ body, html {
 .video_player {
   width: 810px;
   height: 500px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 /* Stylowanie tagu <video> */
