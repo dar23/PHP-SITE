@@ -20,7 +20,7 @@ body, html {
   width: 810px;
   max-height: 440px;
   overflow-y: scroll;
- border: 1px solid black;
+
   margin-top: 15px;
   gap: 33px;
 }
@@ -176,7 +176,8 @@ button {
   background-color: white !important;
   width: 810px;
  height: 20px;
- border: 1px solid black;
+ padding-top: 20px;
+ 
 }
 
 /* Stylowanie linków paginacji */
