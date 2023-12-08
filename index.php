@@ -189,11 +189,13 @@ require('linki_fonts.php');
                     
                     while ($row = mysqli_fetch_array($result)) {
 
-                            echo '<div class="photo">'.'</div>';
+                            echo '<div class="place_to_mems">'.'</div>'.
 
+                                    '<div class="title">'.'</div>'.
 
+                                  
 
-
+                                    '</div>';
 
                     }
 
