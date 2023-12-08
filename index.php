@@ -166,134 +166,22 @@ require('linki_fonts.php');
 
             </div>
 
-    <ul class="paginator_video">
+            <ul class="paginator_video">
 
                 <?php
 
-                    for ($page = 1; $page <= $number_site; $page++) {
-                        echo '<li>' . '<a href = "index.php?page=' . $page . '" >' . $page . ' </a>' . '</li>';
-                    }
-                
-                ?>
-
-    </ul>
-        
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-        
-</div>
-
-
-
-
-
-        <style>
-
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <div class="place_to_posts">  
-            <div class='main_post'>
-                <?php
-                $sqli = "SELECT DISTINCT * FROM posts ORDER BY id DESC LIMIT 1";
-                $result = $conn->query($sqli);
-                while ($row = mysqli_fetch_array($result)) {
-                    $rowtitle = $row['title'];
-                    $rowwith = $row['articles'];
-                    echo '<a href="news.php?id=' . $row['id'] . '">' . '<img src="main/' . $row["pictures"] . '">' . '</a>'
-                        . "<div class='title'>"
-                        . '<p class="title_text_main">' . mb_strimwidth("$rowtitle", 0, 30, "...") . '</p>'
-                        . '</div>';
-                };
-                $sqli = "SELECT DISTINCT * FROM posts ORDER BY id DESC LIMIT 10";
-                $result = $conn->query($sqli);
-                ?>
-            </div>
-
-            <div class='entries_post'>
-                <?php
-                while ($row = mysqli_fetch_array($result)) {
-                    $rowtitle = $row['articles'];
-                    echo '<div class="one_entry">'
-                        . '<a href="news.php?id=' . $row['id'] . '">' . '<img src="main/' . $row["pictures"] . '"  class="photos"  >'
-                        . "<div class='header_entry'>"
-                        . '<p class="title_text">' . mb_strimwidth("$rowtitle", 0, 230, "...") . '</p>' . '</a>'
-                        . '</div>'
-                        . '</div>';
-                };
-                ?>
-            </div>
-
-            <ul class="paginator_post">
-                <?php
                 for ($page = 1; $page <= $number_site; $page++) {
                     echo '<li>' . '<a href = "index.php?page=' . $page . '" >' . $page . ' </a>' . '</li>';
                 }
-                ?>
+               
+               ?>
+
             </ul>
-        </div> -->
-    </div>
+        </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
     <!--   PART TWO SITE (DOWN PART)    -->
     <div id="panel">

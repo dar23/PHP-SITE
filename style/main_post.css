@@ -4,10 +4,7 @@
 .place_to_post {
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  flex-direction: row;
+ 
 }
 
 .main_post {
