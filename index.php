@@ -191,11 +191,10 @@ require('linki_fonts.php');
 
                             echo '<div class="place_to_mems">'.'</div>'.
 
-                                    '<div class="title">'.'</div>'.
-
+                                    '<div class="picture_image">'.'</div>'.
+                                    '<div class="title_picture">'.'</div>'.   
                                   
-
-                                    '</div>';
+                                '</div>';
 
                     }
 
