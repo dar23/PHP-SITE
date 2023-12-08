@@ -109,9 +109,11 @@ require('linki_fonts.php');
         </div> !-->
 
 
-        <div class='player'> <!--  videoplayer miejsce na filmiki   !-->
-            <div class="video_player">
-                <?php
+<div class='player'> <!--  videoplayer miejsce na filmiki   !-->
+           
+    <div class="video_player">
+               
+        <?php
 
                 $videos1 = "SELECT DISTINCT * FROM videos ORDER BY id DESC ";
                 $result = $conn->query($videos1);
@@ -126,10 +128,13 @@ require('linki_fonts.php');
 
                 ?>
 
-            </div>
+    </div>
 
-            <div class="records_container">
-                <?php
+
+
+    <div class="records_container">
+               
+        <?php
 
                 require("pagination_video.php");
 
@@ -153,10 +158,7 @@ require('linki_fonts.php');
 
                                                      '<button class="whatsupp turn_on_off" >'.'<i class="fa-brands fa-whatsapp"></i> '.'</button >'.
 
-                                                     
-
                                              '</div>'
-
                         .'</div>';
                 };
 
@@ -164,16 +166,20 @@ require('linki_fonts.php');
 
             </div>
 
-            <ul class="paginator_video">
+    <ul class="paginator_video">
 
                 <?php
-                for ($page = 1; $page <= $number_site; $page++) {
-                    echo '<li>' . '<a href = "index.php?page=' . $page . '" >' . $page . ' </a>' . '</li>';
-                }
+
+                    for ($page = 1; $page <= $number_site; $page++) {
+                        echo '<li>' . '<a href = "index.php?page=' . $page . '" >' . $page . ' </a>' . '</li>';
+                    }
+                
                 ?>
 
-            </ul>
-        </div>
+    </ul>
+        
+
+</div>
 
 
 
@@ -229,7 +235,7 @@ require('linki_fonts.php');
 
 
 
-      <!--   <div class="place_to_posts">  
+     <div class="place_to_posts">  
             <div class='main_post'>
                 <?php
                 $sqli = "SELECT DISTINCT * FROM posts ORDER BY id DESC LIMIT 1";
