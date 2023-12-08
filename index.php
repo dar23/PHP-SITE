@@ -181,7 +181,49 @@ require('linki_fonts.php');
 
 
 
-        
+<div class="post_container">
+<?php
+
+                    $post="SELECT DISTINCT * FROM posts ORDER BY id ";
+                    $result=$conn->query($post);
+                    
+                    while ($row = mysqli_fetch_array($result)) {
+
+                            echo '<div class="photo">'.'</div>';
+
+
+
+
+
+                    }
+
+
+?>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--   PART TWO SITE (DOWN PART)    -->
     <div id="panel">
