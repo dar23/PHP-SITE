@@ -25,7 +25,7 @@ require('linki_fonts.php');
     <link rel="stylesheet" href="style/three_news.css">
     <link rel="stylesheet" href="style/video_post.css">
     <link rel="stylesheet" href="style/translate_menu.css">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/mem_post.css">
     <script src="https://kit.fontawesome.com/6d745535f9.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">

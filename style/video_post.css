@@ -81,6 +81,13 @@ video {
 
 }
 
+::-webkit-scrollbar {
+  display: none;
+  } 
+  
+
+
+
 /* Ikony */
 
 .place_to_icon {
