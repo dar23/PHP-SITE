@@ -191,7 +191,7 @@ require('linki_fonts.php');
 
                             echo '<div class="place_to_mems">'.'</div>'.
 
-                                    '<div class="picture_image">'.'</div>'.
+                                    '<div class="picture_image">'.'</div>'. // tu dodaj zmnienną zawierającą dostęp do obrazka
                                     '<div class="title_picture">'.'</div>'.   
                                   
                                 '</div>';
