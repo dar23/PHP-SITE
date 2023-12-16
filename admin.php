@@ -15,8 +15,8 @@ if (isset($_POST['main_title']) && !empty($_FILES['main_file']['name'])) {
 
 
 
-  $sql = "INSERT INTO posts (title,articles,pictures)
-VALUES ('$title', '$article','$picture')";
+  $sql = "INSERT INTO posts (title,picture)
+VALUES ('$title','$picture')";
 
   if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";

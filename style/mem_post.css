@@ -1,0 +1,16 @@
+.place_to_mems{
+
+position: absolute;
+width: 100px;
+height: 100px;
+top:0;
+border:1px solid black;
+}
+
+.picture_image>img{
+
+width: 100%;
+height: 100%;
+
+
+}

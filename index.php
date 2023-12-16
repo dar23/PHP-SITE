@@ -49,7 +49,7 @@ require('linki_fonts.php');
 
 
     <!-- główna strona -->
-    <div class="main">
+<div class="main">
 
 
 
@@ -181,17 +181,18 @@ require('linki_fonts.php');
 
 
 
-<div class="post_container">
-<?php
+    <div class="post_container">
+                
+            <?php
 
                     $post="SELECT DISTINCT * FROM posts ORDER BY id ";
                     $result=$conn->query($post);
                     
                     while ($row = mysqli_fetch_array($result)) {
 
-                            echo '<div class="place_to_mems">'.'</div>'.
+                            echo '<div class="place_to_mems">'.
 
-                                    '<div class="picture_image">'.'</div>'. // tu dodaj zmnienną zawierającą dostęp do obrazka
+                                    '<div class="picture_image">'.'<img src="main/'.$row['picture'].'">'.'</div>'. // tu dodaj zmnienną zawierającą dostęp do obrazka
                                     '<div class="title_picture">'.'</div>'.   
                                   
                                 '</div>';
