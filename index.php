@@ -40,16 +40,17 @@ require('linki_fonts.php');
  
  <ul>
  
-     <li class="button_admin"><a>DODAJ FILMIK   </a></li>
+     <li class="button_admin"><a>DODAJ FILMIK</a></li>
      <li class="button_admin"><a>DODAJ MEMA</a></li>
-    
+     <li class="button_admin"><a>ZAREJESTRUJ SIĘ</a></li>
+     <li class="button_admin"><a>LOGIN</a></li>
  </ul>
  
  </nav>    
 
 
     <!-- główna strona -->
-<div class="main">
+
 
 
 
@@ -69,47 +70,9 @@ require('linki_fonts.php');
 
 
 
-    <!--   <div class="side_right_video">
-
-            <?php
 
 
-
-            // $sql = "CREATE TABLE new_popular_post (
-            //    id INT NOT NULL AUTO_INCREMENT,
-            ///    post_id INT NOT NULL,
-            //    view_count INT NOT NULL,
-            //      created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-            //     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-            //      PRIMARY KEY (id)
-            //  );";
-            //  $conn->query($sql);
-
-
-            $popular_post = "SELECT * FROM videos ORDER BY id DESC";
-
-            $result = $conn->query($popular_post);
-
-            echo  '<div class="popular">'
-                . '<div class="popular_video">';
-
-            while ($row = mysqli_fetch_array($result)) {
-                echo '<video src="actually/' . $row['video_url'] . '" class="player_popular"></video>';
-            }
-
-            echo '</div>'
-
-                . '<div class="describe"></div>'
-                . '<div class="social_media"></div>'
-                . '</div>';
-
-            ?>
-
-
-        </div> !-->
-
-
-<div class='player'> <!--  videoplayer miejsce na filmiki   !-->
+<div class='player_video_container'> <!--  videoplayer miejsce na filmiki   !-->
            
     <div class="video_player">
                
@@ -181,7 +144,7 @@ require('linki_fonts.php');
 
 
 
-    <div class="post_container">
+    <div class="post_memes_container">
                 
             <?php
 
@@ -200,15 +163,13 @@ require('linki_fonts.php');
                     }
 
 
-?>
+            ?>
 
 
+    </div>
 
 
-</div>
-
-
-
+       
 
 
 
@@ -242,6 +203,10 @@ require('linki_fonts.php');
             </div>
         </form>
     </div>
+
+
+               
+
 
     <script src="js/icon.js"></script>
     <script src="js/logowanie.js"></script>
