@@ -1,61 +1,29 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Kontener z rekordami */
-
-.post_memes_container{
-
-    width: 810px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-top: 150px;
-    margin-left: 50px;
-  border: 1px solid black;
-
-
-
-
+.post_memes_container {
+  width: 910px;
+  height: 965px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 150px;
+  margin-left: 50px;
+  overflow-y: scroll;
 }
-
-
 
 /* Kontener dla pojedynczego postu */
-
-.place_to_mems{
-
-
-width: 100px;
-height: 100px;
-top:0;
-border:1px solid black;
+.place_to_mems {
+  width: 500px;
+  height: auto;
+  top: 0;
+  box-shadow: 2px 3px 3px rgba(87, 86, 86, 0.5);
+  border-radius: 5px;
+  margin-bottom: 40px;
 }
 
-.picture_image>img{
-
-width: 100%;
-height: 100%;
-
-
-}
-
-
-.main_site{
-
-width: 1000px;
-height: 100vh;
-
-
-
+.place_to_mems .picture_image > img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }

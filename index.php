@@ -155,9 +155,16 @@ require('linki_fonts.php');
 
                             echo '<div class="place_to_mems">'.
 
+
+
                                     '<div class="picture_image">'.'<img src="main/'.$row['picture'].'">'.'</div>'. // tu dodaj zmnienną zawierającą dostęp do obrazka
                                     '<div class="title_picture">'.'</div>'.   
                                   
+
+
+
+
+                                    
                                 '</div>';
 
                     }
