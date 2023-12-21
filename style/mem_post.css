@@ -17,13 +17,13 @@
   width: 500px;
   height: auto;
   top: 0;
-  box-shadow: 2px 3px 3px rgba(87, 86, 86, 0.5);
-  border-radius: 5px;
-  margin-bottom: 40px;
+  box-shadow: 2px 2px 2px rgba(5, 5, 5, 0.5);
+  border-radius: 7px;
+  margin-bottom: 33px;
 }
 
 .place_to_mems .picture_image > img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 7px;
 }

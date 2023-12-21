@@ -148,7 +148,7 @@ require('linki_fonts.php');
                 
             <?php
 
-                    $post="SELECT DISTINCT * FROM posts ORDER BY id ";
+                    $post="SELECT DISTINCT * FROM posts ORDER BY id DESC";
                     $result=$conn->query($post);
                     
                     while ($row = mysqli_fetch_array($result)) {
@@ -164,7 +164,7 @@ require('linki_fonts.php');
 
 
 
-                                    
+
                                 '</div>';
 
                     }
