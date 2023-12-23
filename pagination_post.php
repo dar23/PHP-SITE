@@ -1,22 +1,22 @@
 <?php    
 
-$limit_on_page=5;  // ile rekordów ma być na stronie;
+$limit_on_page_m=5;  // ile rekordów ma być na stronie;
 
-        if(isset($_GET['page'])){   
+        if(isset($_GET['page_m'])){   
 
-        $current_page=$_GET['page'];
+        $current_page_m=$_GET['page_m'];
             
         
 
         }else{
 
 
-        $current_page=1;    //obecna strona;
+        $current_page_m=1;    //obecna strona;
 
 
         }
 
-$skip_page=($current_page-1)*$limit_on_page; // liczba pominiętych stron na której jest 10 rekordów
+$skip_page_m=($current_page_m-1)*$limit_on_page_m; // liczba pominiętych stron na której jest 10 rekordów
 
 
 //$limit_ten="SELECT DISTINCT * FROM  entries_videos ORDER BY id DESC LIMIT 10 ";
