@@ -185,7 +185,7 @@ require('linki_fonts.php');
                         <?php
 
 
-                    if(isset($))
+                 
 
 
                         for ($page_m = 1; $page_m <= $number_site; $page_m++) {
