@@ -140,15 +140,15 @@ require('linki_fonts.php');
                ?>
 
             </ul>
-        </div>
+</div>  <!--koniec playera z galerią video -->
 
 
 
     <div class="post_memes_container">
-                
+        <div class="mems">     
             <?php
 
-                    $post="SELECT DISTINCT * FROM posts ORDER BY id DESC";
+                    $post="SELECT DISTINCT * FROM posts ORDER BY id DESC LIMIT $skip_page, $limit_on_page";
                     $result=$conn->query($post);
                     
                     while ($row = mysqli_fetch_array($result)) {
@@ -172,13 +172,25 @@ require('linki_fonts.php');
 
             ?>
 
+            </div>   
 
-    </div>
 
+ 
 
+                <ul class="paginator_mems">
+
+                        <?php
+
+                        for ($page = 1; $page <= $number_site; $page++) {
+                            echo '<li>' . '<a href = "index.php?page=' . $page . '" >' . $page . ' </a>' . '</li>';
+                        }
+
+                        ?>
+
+                 </ul>
        
 
-
+   </div>
 
 
 

@@ -1,5 +1,5 @@
 /* Kontener z rekordami */
-.post_memes_container {
+.post_memes_container>.mems {
   width:700px;
   height: 965px;
   display: flex;
@@ -26,4 +26,33 @@
   width: 100%;
   height: auto;
   border-radius: 7px;
+}
+
+
+.paginator_mems{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+
+  width: 810px;
+ height: 20px;
+ padding-top: 20px;
+ 
+}
+
+
+.paginator_mems li {
+  margin: 0;
+  letter-spacing: 15px;
+}
+
+.paginator_mems li a {
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center !important;
+  color: rgb(0, 0, 0) !important;
 }
