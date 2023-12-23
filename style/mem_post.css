@@ -1,6 +1,6 @@
 /* Kontener z rekordami */
 .post_memes_container {
-  width: 910px;
+  width:700px;
   height: 965px;
   display: flex;
   justify-content: flex-start;
@@ -14,7 +14,7 @@
 
 /* Kontener dla pojedynczego postu */
 .place_to_mems {
-  width: 500px;
+  width: 700px;
   height: auto;
   top: 0;
   box-shadow: 2px 2px 2px rgba(5, 5, 5, 0.5);
