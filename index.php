@@ -32,6 +32,7 @@ require('linki_fonts.php');
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
+    
 
 </head>
 
@@ -189,7 +190,7 @@ require('linki_fonts.php');
 
 
                         for ($page_m = 1; $page_m <= $number_site; $page_m++) {
-                            echo '<li>' . '<a href = "index.php?page=' . $page_m . '" >' . $page_m . ' </a>' . '</li>';
+                            echo '<li>' . '<a href = "index.php?page=' . $page_m . '"  >' . $page_m . ' </a>' . '</li>';
                         }
 
                         ?>
@@ -198,6 +199,35 @@ require('linki_fonts.php');
        
 
    </div>
+
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
 
 
 
@@ -230,8 +260,7 @@ require('linki_fonts.php');
         </form>
     </div>
 
-
-               
+  
 
 
     <script src="js/icon.js"></script>
