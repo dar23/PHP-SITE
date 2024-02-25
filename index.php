@@ -132,18 +132,54 @@ require('linki_fonts.php');
 
             <ul class="paginator_video">
 
-                <?php
+            <?php
 
                 for ($page = 1; $page <= $number_site; $page++) {
                     echo '<li>' . '<a href = "index.php?page=' . $page . '" >' . $page . ' </a>' . '</li>';
                 }
                 
-                  
-
-               ?>
+            ?>
 
             </ul>
+
+     
+
+
+
 </div>  <!--koniec playera z galerią video -->
+
+<script>
+           
+           let player_video_container= document.querySelector('.player_video_container');
+
+            let records_container=document.querySelector('.records_container');
+
+            async function video_container() {
+
+                const response = await fetch("http://localhost/PHP-SITE/index.php");
+                const movies = await response.text();
+                console.log(movies);
+}
+
+video_container();
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

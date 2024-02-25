@@ -1,5 +1,5 @@
 <?php    
-
+     
 $limit_on_page_m=5;  // ile rekordów ma być na stronie;
 
         if(isset($_SESSION['page_m'])){   // żeby nie przeskakiwało przy zmianie obecnej strony przy klikaniu w 1 paginatorze należy 
