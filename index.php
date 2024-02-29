@@ -2,6 +2,7 @@
 require("connection.php");
 require('logowanie.php');
 
+
 require('hamburger.php');
 require('player.php');
 require('linki_fonts.php');
@@ -48,12 +49,10 @@ require('linki_fonts.php');
  </ul>
  
  </nav>    
-
-
-    <!-- główna strona -->
-
-
-
+<?php
+require_once('record_container.php')
+?>
+<!-- główna strona -->
 
 
     
@@ -70,98 +69,47 @@ require('linki_fonts.php');
         </div> --> 
 
 
-
-
-
-<div class='player_video_container'> <!--  videoplayer miejsce na filmiki   !-->
-           
-    <div class="video_player">
-               
-        <?php
-
-                $videos1 = "SELECT DISTINCT * FROM videos ORDER BY id DESC ";
-                $result = $conn->query($videos1);
-
-                echo '<video controls>';
-
-                while ($row = mysqli_fetch_array($result)) {
-                    echo '<source src="actually/' . $row['video_url'] . '" type="video/mp4">';
-                }
-
-                echo  '</video>';
-
-                ?>
-
-    </div>
-
-
-
-    <div class="records_container">
-               
-        <?php
-
-                require("pagination_video.php");
-
-                $videos = "SELECT DISTINCT * FROM videos ORDER BY id DESC LIMIT $skip_page, $limit_on_page ";
-                $result = $conn->query($videos);
-
-                while ($row = mysqli_fetch_array($result)) {
-
-                    $descr = $row['video_describe'];
-
-                    echo '<div class="place_to_video">'.
-
-                                            
-                                 '<video class="video_record" >'.'<source src="actually/' . $row['video_url'] . '">' . '</video>'.
-                                                                           
-                                            '<div class="place_to_icon">'.
-
-                                                     '<button class="link">'.'<i class="material-symbols-outlined">share</i>'.'</button>'.
-                                                     
-                                                     '<button class="messenger turn_on_off" >'.'<i class="fa-brands fa-facebook-messenger"></i>'.'</button>'.
-
-                                                     '<button class="whatsupp turn_on_off" >'.'<i class="fa-brands fa-whatsapp"></i> '.'</button >'.
-
-                                             '</div>'
-                        .'</div>';
-                };
-
-                ?>
-
-            </div>
-
-            <ul class="paginator_video">
-
-            <?php
-
-                for ($page = 1; $page <= $number_site; $page++) {
-                    echo '<li>' . '<a href = "index.php?page=' . $page . '" >' . $page . ' </a>' . '</li>';
-                }
-                
-            ?>
-
-            </ul>
-
-     
-
-
-
-</div>  <!--koniec playera z galerią video -->
-
 <script>
            
            let player_video_container= document.querySelector('.player_video_container');
 
             let records_container=document.querySelector('.records_container');
 
-            async function video_container() {
+            let paginator_video=document.querySelector('.paginator_video');
+            
+         
+         
+         
+            document.addEventListener('DOMContentLoaded', loadpaginator);
 
-                const response = await fetch("http://localhost/PHP-SITE/index.php");
-                const movies = await response.text();
-                console.log(movies);
-}
+         
+          function loadpaginator(){
 
-video_container();
+                fetch('record_container.php')
+    .then(response => response.text())
+     .then(response=> {
+
+      console.log(response);
+
+
+
+     })
+   
+  
+
+        
+          }
+     
+   
+  
+
+        
+
+        
+       
+
+
+
 
 
         </script>
