@@ -80,7 +80,7 @@ require_once('record_container.php')
          
          
          
-            document.addEventListener('DOMContentLoaded', loadpaginator);
+            document.addEventListener('DOMContentLoaded', loadpaginator); // ładowanie strony tuż po uruchomieniu strony
 
          
           function loadpaginator(){
