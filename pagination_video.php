@@ -4,9 +4,9 @@ $limit_on_page=30;  // ile rekordów ma być na stronie;
 
 
 
-        if(isset($_GET['page'])){   
+        if(isset($_GET['page_v'])){   
 
-        $current_page=$_GET['page'];
+        $current_page=$_GET['page_v'];
         
 
         }else{

@@ -2,9 +2,9 @@
      
 $limit_on_page_m=5;  // ile rekordów ma być na stronie;
 
-        if(isset($_SESSION['page_m'])){   // żeby nie przeskakiwało przy zmianie obecnej strony przy klikaniu w 1 paginatorze należy 
+        if(isset($_SESSION['page_p'])){   // żeby nie przeskakiwało przy zmianie obecnej strony przy klikaniu w 1 paginatorze należy 
 
-        $current_page_m=$_SESSION['page_m'];
+        $current_page_m=$_SESSION['page_p'];
             
         
 

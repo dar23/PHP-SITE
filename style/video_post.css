@@ -182,25 +182,25 @@ button {
 /* Paginacja dla wideo */
 
 .paginator_video {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style-type: none;
+position: absolute;
   margin: 0;
   padding: 0;
   color: black;
-  background-color: white !important;
+  background-color: rgb(255, 255, 255) !important;
   width: 810px;
  height: 20px;
- padding-top: 20px;
- 
+ top: 89.5vh;
+ left:150px;
+ display: flex; /* Ustaw kontener jako flexbox dla wyrównania poziomego */
+ justify-content: center; /* Wycentruj zawartość poziomo w kontenerze */
+ align-items: center;
 }
 
 /* Stylowanie linków paginacji */
 
 .paginator_video li {
   margin: 0;
-  letter-spacing: 15px;
+  letter-spacing: 15px;list-style: none;
 }
 
 .paginator_video li a {

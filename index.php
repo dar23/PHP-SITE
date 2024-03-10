@@ -49,75 +49,112 @@ require('linki_fonts.php');
  </ul>
  
  </nav>    
-<?php
-require_once('record_container.php')
-?>
-<!-- główna strona -->
 
 
-    
-     <!-- wyszukiwarka plików 
-        <div class="search_container">  
-            <form method="post">
-                <label for="search" class="label_search">
-                    <div class="common_element">
-                        <i class=" fa fa-search loop " aria-hidden="true"></i></input>
-                         <input type="text" name="searching" class="input_search" autocomplete="off" />
-                    </div>
-                </label>
-            </form>
-        </div> --> 
 
-
-<script>
+ <div class='player_video_container'> <!--  videoplayer miejsce na filmiki   !-->
            
-           let player_video_container= document.querySelector('.player_video_container');
+           <div class="video_player">
+                      
+               <?php
+       
+           require("connection.php");
+       
 
-            let records_container=document.querySelector('.records_container');
-
-            let paginator_video=document.querySelector('.paginator_video');
+       
+                       $videos1 = "SELECT DISTINCT * FROM videos ORDER BY id DESC ";
+                       $result = $conn->query($videos1);
+       
+                       echo '<video controls>';
+       
+                       while ($row = mysqli_fetch_array($result)) {
+                           echo '<source src="actually/' . $row['video_url'] . '" type="video/mp4">';
+                       }
+       
+                       echo  '</video>';
+       
+                       ?>
+       
+           </div>
+       
+       
+       
+           <div class="records_container">
+                      
+               <?php
+       
+                       require("pagination_video.php");
+       
+                       $videos = "SELECT DISTINCT * FROM videos ORDER BY id DESC LIMIT $skip_page, $limit_on_page ";
+                       $result = $conn->query($videos);
+       
+                       while ($row = mysqli_fetch_array($result)) {
+       
+                           $descr = $row['video_describe'];
+       
+                           echo '<div class="place_to_video">'.
+       
+                                                   
+                                        '<video class="video_record" >'.'<source src="actually/' . $row['video_url'] . '">' . '</video>'.
+                                                                                  
+                                                   '<div class="place_to_icon">'.
+       
+                                                            '<button class="link">'.'<i class="material-symbols-outlined">share</i>'.'</button>'.
+                                                            
+                                                            '<button class="messenger turn_on_off" >'.'<i class="fa-brands fa-facebook-messenger"></i>'.'</button>'.
+       
+                                                            '<button class="whatsupp turn_on_off" >'.'<i class="fa-brands fa-whatsapp"></i> '.'</button >'.
+       
+                                                    '</div>'
+                               .'</div>';
+                       };
+       
+                       ?>
+       
+                   </div>
+       
             
-         
-         
-         
-            document.addEventListener('DOMContentLoaded', loadpaginator); // ładowanie strony tuż po uruchomieniu strony
-
-         
-          function loadpaginator(){
-
-                fetch('record_container.php')
-    .then(response => response.text())
-     .then(response=> {
-
-      console.log(response);
-
-
-
-     })
-   
-  
-
-        
-          }
-     
-   
-  
-
-        
-
-        
        
 
 
 
+         
+       
+       
+       
+       </div>  <!--koniec playera z galerią video -->
+
+       <ul class="paginator_video">
+       
+                   <?php
+       
+                       for ($page = 1; $page <= $number_site; $page++) {
+                           echo '<li>' . '<a href = "index.php?page_v=' . $page . '" >' . $page . ' </a>' . '</li>';
+                       }
+                       
+                   ?>
+       
+                   </ul>
 
 
-        </script>
+<script>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+</script>
 
 
 
@@ -174,7 +211,7 @@ require_once('record_container.php')
 
 
                         for ($page_m = 1; $page_m <= $number_site; $page_m++) {
-                            echo '<li>' . '<a href = "index.php?page=' . $page_m . '"  >' . $page_m . ' </a>' . '</li>';
+                            echo '<li>' . '<a href = "index.php?page_p=' . $page_m . '"  >' . $page_m . ' </a>' . '</li>';
                         }
 
                         ?>
