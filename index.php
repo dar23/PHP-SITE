@@ -50,7 +50,7 @@ require('linki_fonts.php');
  
  </nav>    
 
-
+<div class="main_video">
 
  <div class='player_video_container'> <!--  videoplayer miejsce na filmiki   !-->
            
@@ -113,52 +113,28 @@ require('linki_fonts.php');
        
                    </div>
        
-            
-       
+    
 
-
-
-         
-       
-       
        
        </div>  <!--koniec playera z galerią video -->
 
-       <ul class="paginator_video">
        
-                   <?php
+
+
+<ul class="paginator_video">
        
-                       for ($page = 1; $page <= $number_site; $page++) {
-                           echo '<li>' . '<a href = "index.php?page_v=' . $page . '" >' . $page . ' </a>' . '</li>';
-                       }
-                       
-                   ?>
-       
-                   </ul>
+       <?php
+
+           for ($page = 1; $page <= $number_site; $page++) {
+               echo '<li>' . '<a href = "index.php?page_v=' . $page . '" >' . $page . ' </a>' . '</li>';
+           }
+           
+       ?>
+
+       </ul>
 
 
-<script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</script>
-
-
-
-
+</div>
 
 
 

@@ -51,7 +51,7 @@ video {
   justify-content: flex-start;
   flex-direction: row;
   width: 810px;
-  max-height: 440px;
+  height: 440px !important;
   overflow-y: scroll;
 
   margin-top: 15px;
@@ -182,18 +182,17 @@ button {
 /* Paginacja dla wideo */
 
 .paginator_video {
-position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   color: black;
-  background-color: rgb(255, 255, 255) !important;
+
   width: 810px;
  height: 20px;
- top: 89.5vh;
- left:150px;
- display: flex; /* Ustaw kontener jako flexbox dla wyrównania poziomego */
- justify-content: center; /* Wycentruj zawartość poziomo w kontenerze */
- align-items: center;
+ padding-top: 20px;
 }
 
 /* Stylowanie linków paginacji */
