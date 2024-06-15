@@ -50,181 +50,98 @@ require('linki_fonts.php');
  
  </nav>    
 
-<div class="main_video">
+ <div class="main_video">
+    <div class='player_video_container'>
+        <div class="video_player">
+            <?php
+            require("connection.php");
 
- <div class='player_video_container'> <!--  videoplayer miejsce na filmiki   !-->
-           
-           <div class="video_player">
-                      
-               <?php
-       
-           require("connection.php");
-       
+            $videos1 = "SELECT DISTINCT * FROM videos ORDER BY id DESC";
+            $result = $conn->query($videos1);
 
-       
-                       $videos1 = "SELECT DISTINCT * FROM videos ORDER BY id DESC ";
-                       $result = $conn->query($videos1);
-       
-                       echo '<video controls>';
-       
-                       while ($row = mysqli_fetch_array($result)) {
-                           echo '<source src="actually/' . $row['video_url'] . '" type="video/mp4">';
-                       }
-       
-                       echo  '</video>';
-       
-                       ?>
-       
-           </div>
-       
-
-      
-           <div class="records_container">
-                      
-                      <?php
-              
-                              require("pagination_video.php");
-              
-                              $videos = "SELECT DISTINCT * FROM videos ORDER BY id DESC LIMIT $skip_page, $limit_on_page ";
-                              $result = $conn->query($videos);
-              
-                              while ($row = mysqli_fetch_array($result)) {
-              
-                                  $descr = $row['video_describe'];
-              
-                                  echo '<div class="place_to_video">'.
-              
-                                                          
-                                               '<video class="video_record" >'.'<source src="actually/' . $row['video_url'] . '">' . '</video>'.
-                                                                                         
-                                                          '<div class="place_to_icon">'.
-              
-                                                                   '<button class="link">'.'<i class="material-symbols-outlined">share</i>'.'</button>'.
-                                                                   
-                                                                   '<button class="messenger turn_on_off" >'.'<i class="fa-brands fa-facebook-messenger"></i>'.'</button>'.
-              
-                                                                   '<button class="whatsupp turn_on_off" >'.'<i class="fa-brands fa-whatsapp"></i> '.'</button >'.
-              
-                                                           '</div>'
-                                      .'</div>';
-                              };
-              
-                              ?>
-              
-                          </div>
-              
-           
-       
-              
-              </div>  <!--koniec playera z galerią video -->
-       
-              
-       
-       
-       <ul class="paginator_video">
-              
-              <?php
-       
-                  for ($page = 1; $page <= $number_site; $page++) {
-                      echo '<li>' . '<a href = "index.php?page_v=' . $page . '" >' . $page . ' </a>' . '</li>';
-                  }
-                  
-              ?>
-       
-              </ul>
-       
-       
-       </div>
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-       <script>
-
-
-
-
-
-       </script>
-
-
-
-
-
-
-
-
-
- 
-
-    <div class="post_memes_container">
-        <div class="mems">     
-            <?php   
-             require("pagination_post.php");
-
-                    $post="SELECT DISTINCT * FROM posts ORDER BY id DESC LIMIT $skip_page_m, $limit_on_page_m";
-                    $result=$conn->query($post);
-                    
-                    while ($rows = mysqli_fetch_array($result)) {
-
-                            echo '<div class="place_to_mems">'.
-
-
-
-                                    '<div class="picture_image">'.'<img src="main/'.$rows['picture'].'">'.'</div>'. // tu dodaj zmnienną zawierającą dostęp do obrazka
-                                    '<div class="title_picture">'.'</div>'.   
-                                  
-
-
-
-
-
-                                '</div>';
-
-                    }
-
-                      
+            echo '<video controls>';
+            while ($row = mysqli_fetch_array($result)) {
+                echo '<source src="actually/' . $row['video_url'] . '" type="video/mp4">';
+            }
+            echo '</video>';
             ?>
+        </div>
 
-            </div>   
+        <div class="records_container">
+            <?php
+            $limit_on_page = 30;  // ile rekordów ma być na stronie
 
+            if(isset($_GET['page_v'])) {
+                $current_page = $_GET['page_v'];
+            } else {
+                $current_page = 1;    // obecna strona
+            }
 
- 
+            $skip_page = ($current_page - 1) * $limit_on_page; // liczba pominiętych stron na której jest 10 rekordów
 
-                <ul class="paginator_mems">
+            $count_query = "SELECT COUNT(*) as total FROM videos";
+            $count_result = $conn->query($count_query);
+            $total_rows = mysqli_fetch_array($count_result)['total'];
 
-                        <?php
+            $number_site = ceil($total_rows / $limit_on_page); // ile stron jest obecnie 
 
+            $videos = "SELECT DISTINCT * FROM videos ORDER BY id DESC LIMIT $skip_page, $limit_on_page";
+            $result = $conn->query($videos);
 
-                 
+            while ($row = mysqli_fetch_array($result)) {
+                echo '<div class="place_to_video">'.
+                        '<video class="video_record"><source src="actually/' . $row['video_url'] . '"></video>'.
+                        '<div class="place_to_icon">'.
+                            '<button class="link"><i class="material-symbols-outlined">share</i></button>'.
+                            '<button class="messenger turn_on_off"><i class="fa-brands fa-facebook-messenger"></i></button>'.
+                            '<button class="whatsupp turn_on_off"><i class="fa-brands fa-whatsapp"></i></button>'.
+                        '</div>'.
+                    '</div>';
+            }
+            ?>
+        </div>
+    </div>
 
-
-                        for ($page_m = 1; $page_m <= $number_site; $page_m++) {
-                            echo '<li>' . '<a href = "index.php?page_p=' . $page_m . '" onclick="loadPage($page)" >' . $page_m . ' </a>' . '</li>';
-                        }
-
-                        ?>
-
-                 </ul>
-       
-
-   </div>
-
+    <ul class="paginator_video">
+        <?php
+        for ($page = 1; $page <= $number_site; $page++) {
+            echo '<li><a class="async-page" href="index.php?page_v=' . $page . '">' . $page . ' </a></li>';
+        }
+        ?>
+    </ul>
+</div>
 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+    function loadPage(page) {
+        fetch('index.php?page_v=' + page)
+            .then(response => response.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const recordsContainer = doc.querySelector('.records_container');
+                const paginatorVideo = doc.querySelector('.paginator_video');
+                document.querySelector('.records_container').innerHTML = recordsContainer.innerHTML;
+                document.querySelector('.paginator_video').innerHTML = paginatorVideo.innerHTML;
+                
+                attachPaginationEventListeners();
+            })
+            .catch(error => console.error('Error loading page:', error));
+    }
 
-// Funkcja do asynchronicznego ładowania strony
+    function attachPaginationEventListeners() {
+        const links = document.querySelectorAll('.paginator_video a');
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const page = this.getAttribute('href').split('page_v=')[1];
+                loadPage(page);
+            });
+        });
+    }
 
+    attachPaginationEventListeners();
+});
 </script>
 
 
@@ -232,6 +149,83 @@ require('linki_fonts.php');
 
 
 
+       <div class="post_memes_container">
+    <div class="mems">     
+        <?php   
+        require("connection.php");
+
+        $limit_on_page_m = 5;  // ile rekordów ma być na stronie
+
+        if(isset($_GET['page_p'])){   // sprawdzanie numeru strony w URL
+            $current_page_m = $_GET['page_p'];
+        } else {
+            $current_page_m = 1;    // obecna strona
+        }
+
+        $skip_page_m = ($current_page_m - 1) * $limit_on_page_m; // liczba pominiętych rekordów
+
+        // Zapytanie, aby uzyskać liczbę wszystkich rekordów
+        $count_query = "SELECT COUNT(*) as total FROM posts";
+        $count_result = $conn->query($count_query);
+        $total_rows = mysqli_fetch_array($count_result)['total'];
+
+        $number_site = ceil($total_rows / $limit_on_page_m); // ile stron jest obecnie 
+
+        // Zapytanie, aby uzyskać ograniczoną liczbę rekordów
+        $post_query = "SELECT DISTINCT * FROM posts ORDER BY id DESC LIMIT $skip_page_m, $limit_on_page_m";
+        $result = $conn->query($post_query);
+
+        while ($rows = mysqli_fetch_array($result)) {
+            echo '<div class="place_to_mems">'.
+                    '<div class="picture_image"><img src="main/'.$rows['picture'].'"></div>'.
+                    '<div class="title_picture"></div>'.
+                '</div>';
+        }
+        ?>
+    </div>   
+
+    <ul class="paginator_mems">
+        <?php
+        for ($page_m = 1; $page_m <= $number_site; $page_m++) {
+            echo '<li><a href="index.php?page_p=' . $page_m . '">' . $page_m . '</a></li>';
+        }
+        ?>
+    </ul>
+</div>
+  
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    function loadPage(page) {
+        fetch('index.php?page_p=' + page)
+            .then(response => response.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const memesContainer = doc.querySelector('.mems');
+                const paginatorMems = doc.querySelector('.paginator_mems');
+                document.querySelector('.mems').innerHTML = memesContainer.innerHTML;
+                document.querySelector('.paginator_mems').innerHTML = paginatorMems.innerHTML;
+                
+                attachPaginationEventListeners();
+            })
+            .catch(error => console.error('Error loading page:', error));
+    }
+
+    function attachPaginationEventListeners() {
+        const links = document.querySelectorAll('.paginator_mems a');
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const page = this.getAttribute('href').split('page_p=')[1];
+                loadPage(page);
+            });
+        });
+    }
+
+    attachPaginationEventListeners();
+});
+</script>
 
 
 

@@ -1,5 +1,40 @@
-      
-           <div class="records_container">
+
+<div class="main_video">
+
+ <div class='player_video_container'> <!--  videoplayer miejsce na filmiki   !-->
+           
+           <div class="video_player">
+                      
+               <?php
+       
+           require("connection.php");
+       
+
+       
+                       $videos1 = "SELECT DISTINCT * FROM videos ORDER BY id DESC ";
+                       $result = $conn->query($videos1);
+       
+                       echo '<video controls>';
+       
+                       while ($row = mysqli_fetch_array($result)) {
+                           echo '<source src="actually/' . $row['video_url'] . '" type="video/mp4">';
+                       }
+       
+                       echo  '</video>';
+       
+                       ?>
+       
+           </div>
+       
+        <div class="records_container">
+
+                         
+
+
+
+
+
+
                       
                       <?php
              
@@ -85,4 +120,4 @@
        
        
        </div>
-       
+                
